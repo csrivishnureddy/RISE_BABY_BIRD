@@ -1,0 +1,1915 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from risinternational.net/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 07:20:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-RIS International Services</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="../static/main/css/global.css">
+    
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/slideout%401.0.1/dist/slideout.min.css" />
+    <!-- AOS CSS -->
+    <link href="../../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    
+     
+  <link rel="stylesheet" href="../static/main/css/index.css">
+  <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/slideout%401.0.1/dist/slideout.min.css" />
+  <!-- Slideout JS -->
+  <script src="../../cdn.jsdelivr.net/npm/slideout%401.0.1/dist/slideout.min.js"></script>
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="../static/main/css/index.css">
+    <!-- Removed section.css since we're using Tailwind -->
+
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/slideout%401.0.1/dist/slideout.min.css" />
+    <link rel="stylesheet" href="../static/main/css/testimonial.css">  
+    <!-- Slideout JS -->
+    <script src="../../cdn.jsdelivr.net/npm/slideout%401.0.1/dist/slideout.min.js"></script>
+    
+    <!-- Custom styles for font family and size -->
+    <style>
+        .header-font {
+            font-family: var(--header-font, 'Montserrat', sans-serif);
+            font-size: 25px !important;
+        }
+    </style>
+
+
+<!-- AOS Animation Library -->
+<link href="../../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+<!-- GSAP -->
+<script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .hover-lift {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hover-lift:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  .floating {
+    animation: floating 6s ease-in-out infinite;
+  }
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+  }
+  .category-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .category-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .blob {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: blob 7s ease-in-out infinite;
+  }
+  @keyframes blob {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  }
+  .text-shadow {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  .search-glow:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1), 0 0 20px rgba(99, 102, 241, 0.2);
+  }
+
+  /* Existing styles... */
+  
+  /* Enhanced floating featured posts */
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Enhanced glass effect for featured posts */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .glass-effect:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive adjustments for floating posts */
+  @media (max-width: 640px) {
+    .floating-post-mobile {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      margin: 1rem 0;
+      max-width: 100%;
+    }
+  }
+  
+  /* Enhanced floating animation for featured posts */
+  .floating-featured {
+    animation: floating-featured 8s ease-in-out infinite;
+  }
+  
+  @keyframes floating-featured {
+    0%, 100% { 
+      transform: translateY(0px) translateX(0px) rotate(0deg); 
+    }
+    25% { 
+      transform: translateY(-10px) translateX(5px) rotate(1deg); 
+    }
+    50% { 
+      transform: translateY(-15px) translateX(-3px) rotate(-0.5deg); 
+    }
+    75% { 
+      transform: translateY(-8px) translateX(2px) rotate(0.5deg); 
+    }
+  }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+  
+<nav class="w-full bg-[#1C1F22]/70 backdrop-blur-md text-white px-25 py-2 flex items-center justify-between shadow-md fixed top-0 left-0 z-50 border border-white/30">
+  <!-- Logo -->
+  <a href="../index.html" class="flex justify-center items-center gap-2">
+    <img src="../static/main/images/RISNEWLOGO.png" alt="Logo" id="logo" class="!h-20 !w-18 !max-w-none !max-h-none py-2">
+  </a>
+
+  <!-- Desktop Menu -->
+  <ul class="hidden md:flex gap-8 text-xs font-medium items-center">
+    <li><a href="../index.html" class="hover:text-[#00AEEF] transition">Home</a></li>
+    <li><a href="../aboutus/index.html" class="hover:text-[#00AEEF] transition">About us</a></li>
+    <li><a href="../services/index.html" class="hover:text-[#00AEEF] transition">Services</a></li>
+    <li><a href="../careers/index.html" class="hover:text-[#00AEEF] transition">Careers</a></li>
+    <li><a href="index.html" class="hover:text-[#00AEEF] transition">Blog</a></li>
+    
+    
+  </ul>
+
+  <!-- Right controls (dark mode + hamburger) -->
+  <div class="flex items-center gap-2">
+    <!-- Dark mode toggle (FontAwesome) -->
+    
+    <!-- Hamburger (mobile only) -->
+    <button id="hamburger-icon" class="md:hidden p-2 rounded hover:bg-gray-700 transition" aria-label="Open menu">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Off-canvas Menu - UPDATED FOR BETTER TEXT VISIBILITY -->
+  <div id="offcanvas-menu" class="fixed top-0 right-0 h-full w-80 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 backdrop-blur-xl shadow-2xl z-50 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col rounded-l-2xl border-l-2 border-[#00AEEF]/30">
+    
+    <!-- Header Section -->
+    <div class="flex items-center justify-between px-6 py-4 border-b-2 border-[#00AEEF]/20 bg-gray-800/50">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-[#00AEEF] rounded-full flex items-center justify-center">
+          <i class="fas fa-bars text-white text-sm"></i>
+        </div>
+        <span class="font-bold text-xl text-white drop-shadow-lg">Menu</span>
+      </div>
+      <button id="close-menu" class="p-2 rounded-full hover:bg-red-500/20 transition-all duration-200 group" aria-label="Close menu">
+        <i class="fas fa-times text-xl text-white group-hover:text-red-400 transition-colors"></i>
+      </button>
+    </div>
+    
+    <!-- Navigation Links -->
+    <ul class="flex flex-col gap-2 p-6 font-medium flex-1">
+      <li>
+        <a href="../index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-home text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="../aboutus/index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-info-circle text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">About Us</span>
+        </a>
+      </li>
+      <li>
+        <a href="../services/index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-cogs text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">Services</span>
+        </a>
+      </li>
+      <li>
+        <a href="../careers/index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-briefcase text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">Careers</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="../contact/index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-envelope text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">Contact Us</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  
+
+<!-- Hero Section with Floating Featured Posts -->
+<div class="top-0 left-0 h-20 w-full bg-black/20 z-0"></div>
+ <section class="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 min-h-screen flex items-center">
+
+  <!-- Background Watermark Image -->
+  <div class="absolute inset-0 opacity-20 dark:opacity-10">
+    <img 
+      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80" 
+      alt="Background" 
+      class="w-full h-full object-cover object-center"
+    >
+    <div class="absolute inset-0 bg-gradient-to-br from-white/80 via-white/60 to-white/40 dark:from-gray-900/80 dark:via-gray-900/60 dark:to-gray-900/40"></div>
+  </div>
+
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-r from-purple-400 to-pink-400 blob opacity-20 floating"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-r from-blue-400 to-cyan-400 blob opacity-20 floating" style="animation-delay: 2s;"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-indigo-400 to-purple-400 blob opacity-10 floating" style="animation-delay: 4s;"></div>
+  </div>
+  
+  <!-- Floating Featured Posts -->
+  
+  
+  <!-- Perfectly Centered Container -->
+  <div class="relative w-full flex items-center justify-center">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <!-- Main Content - Perfectly Centered -->
+        <div class="space-y-8 max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+          <div class="space-y-6">
+            <!-- Badge -->
+            <div class="flex justify-center">
+              <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full border border-indigo-200/50 backdrop-blur-sm">
+                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-3"></span>
+                <span class="text-sm font-medium text-indigo-600 dark:text-indigo-400">Latest Insights & Stories</span>
+              </div>
+            </div>
+            
+            <!-- Main Heading -->
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-black leading-tight text-shadow">
+              <span class="gradient-text">Discover</span><br>
+              <span class="text-gray-800 dark:text-white">Amazing</span><br>
+              <span class="text-indigo-600 dark:text-indigo-400">Stories</span>
+            </h1>
+            
+            <!-- Description -->
+            <div class="flex justify-center">
+              <p class="text-base md:text-lg lg:text-2xl text-gray-600 dark:text-indigo-300 max-w-3xl leading-relaxed">
+                Dive into a world of insights, tutorials, and inspiring content crafted by industry experts and thought leaders.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Enhanced Search Bar - Perfectly Centered -->
+          <div class="flex justify-center mb-32">
+            <form action="https://risinternational.net/blog/" method="get" class="relative w-full max-w-lg">
+              <div class="relative group">
+                <input 
+                  type="text" 
+                  name="q" 
+                  value="" 
+                  placeholder="Search amazing content..." 
+                  class="w-full pl-12 pr-32 py-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-0 rounded-2xl shadow-xl focus:ring-4 focus:ring-indigo-200 dark:focus:ring-indigo-800 focus:outline-none text-gray-700 dark:text-gray-200 placeholder-gray-400 transition-all duration-300 search-glow text-base md:text-lg text-center"
+                  autocomplete="off"
+                >
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <i class="fas fa-search text-gray-400 text-lg"></i>
+                </div>
+                <button 
+                  type="submit" 
+                  class="absolute right-2 top-2 bottom-2 px-6 md:px-8 bg-gradient-to-r from-indigo-500 to-purple-600 text-blue-400 rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 text-sm md:text-base"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Enhanced Stats - Perfectly Centered -->
+          <!-- <div class="flex justify-center mt-40">
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12" data-aos="fade-up" data-aos-delay="200">
+              <div class="text-center group">
+                <div class="text-2xl md:text-3xl lg:text-4xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">0</div>
+                <div class="text-xs md:text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider font-semibold">Articles</div>
+              </div>
+              <div class="text-center group">
+                <div class="text-2xl md:text-3xl lg:text-4xl font-black bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">0</div>
+                <div class="text-xs md:text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider font-semibold">Categories</div>
+              </div>
+              <div class="text-center group">
+                <div class="text-2xl md:text-3xl lg:text-4xl font-black bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">2K+</div>
+                <div class="text-xs md:text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider font-semibold">Readers</div>
+              </div>
+            </div>
+          </div> -->
+          
+          <!-- Original Floating Cards -->
+          <div class="absolute -top-8 -left-8 lg:top-40 lg:left-12  glass-effect rounded-2xl p-4 md:p-6 floating shadow-xl hidden lg:block">
+            <div class="flex items-center space-x-4">
+              <div class="w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
+              <span class="text-xs md:text-sm font-semibold text-gray-700 dark:text-white">Live Updates</span>
+            </div>
+          </div>
+          <div class="absolute -bottom-8 -right-8 glass-effect rounded-2xl p-4 md:p-6 floating shadow-xl hidden lg:block" style="animation-delay: 1s;">
+            <div class="flex items-center space-x-4">
+              <i class="fas fa-heart text-red-400 text-lg"></i>
+              <span class="text-xs md:text-sm font-semibold text-gray-700 dark:text-white">2k Readers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Featured Posts Carousel -->
+  
+
+  <!-- Category Navigation -->
+
+  <section class="flex justify-center top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-700/50 shadow-lg py-8 md:py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center py-4 md:py-6 space-x-4 md:space-x-6">
+        <div class="flex-1 overflow-x-auto category-scroll">
+          <div class="flex space-x-4 md:space-x-4 pb-2 justify-center">
+            <a href="index.html" 
+               class="flex items-center px-6 md:px-8 py-3 md:py-4 rounded-full whitespace-nowrap font-bold transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-indigo-500 to-purple-600 text-blue shadow-xl">
+              <i class="fas fa-globe mr-2 md:mr-3 text-lg"></i>
+              All Posts
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="py-20 md:py-28 bg-transparent justify-between justify-center  flex flex-col md:flex-row">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+      
+    </div>
+    <!-- Load More Button -->
+    
+  </div>
+</section>
+
+
+
+
+
+  <!-- Newsletter Section -->
+    <section class="py-16 md:py-20 bg-blue-900 from-indigo-600 to-purple-700 relative overflow-hidden">
+
+        <div class="absolute inset-0 opacity-10 dark:opacity-10">
+    <img 
+      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80" 
+      alt="Background" 
+      class="w-full h-full object-cover object-center"
+    >
+    <div class="absolute inset-0 bg-gradient-to-br from-white/80 via-white/60 to-white/40 dark:from-gray-900/80 dark:via-gray-900/60 dark:to-gray-900/40"></div>
+  </div>
+
+    <!-- Background Elements -->
+    <div class="absolute inset-0">
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-white/10 blob floating"></div>
+      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/10 blob floating" style="animation-delay: 3s;"></div>
+    </div>
+    
+    <!-- Perfectly Centered Content Container -->
+    <div class="relative h-full flex items-center justify-center min-h-[500px]">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+        
+        <!-- Heading Section -->
+        <div class="mb-12">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 text-shadow leading-tight">
+            Stay in the Loop
+          </h2>
+          <p class="text-lg md:text-xl text-white mb-0 leading-relaxed max-w-2xl mx-auto ">
+            Get the latest insights, tutorials, and industry news delivered straight to your inbox
+          </p>
+        </div>
+        
+        <!-- Newsletter Form Section -->
+                <!-- Newsletter Form Section -->
+        <!-- <div class="mb-10 flex justify-end">
+          <form class="flex flex-col sm:flex-row gap-4 w-full max-w-lg" action="/subscribe/" method="post">
+            <input type="hidden" name="csrfmiddlewaretoken" value="gz8rVc5k9LIDUVS7W61GBw3LCS3cOZjVv2NMsTx0MDvZPYazYe2n18nT3GHpghYZ">
+            <input 
+              type="email" 
+              name="email"
+              placeholder="Enter your email address" 
+              class="flex-1 px-6 py-4 rounded-full border-0 focus:ring-4 focus:ring-white/20 focus:outline-none text-gray-700 placeholder-gray-400 text-base md:text-lg shadow-lg text-center transition-all duration-300"
+              required
+            >
+            <button class="px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-yellow-500 font-semibold rounded-full hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-base md:text-lg"
+              type="submit">
+              Subscribe Now
+            </button>
+          </form>
+        </div> -->
+
+        
+        <!-- Privacy Notice Section -->
+        <div class="mb-24 flex flex-col sm:flex-row items-center justify-center mb-12">
+          <p class="text-blue-200 text-sm opacity-100 flex items-center justify-center">
+            <i class="fas fa-shield-alt mr-2"></i>
+            No spam, unsubscribe at any time. We respect your privacy.
+          </p>
+        </div>
+        
+        <!-- Features Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mt-16">
+          <div class="flex flex-col items-center text-indigo-100 group">
+            <div class="w-14 h-14 bg-white/70 rounded-full flex items-center justify-center mb-3 group-hover:bg-white/30 transition-all duration-300 group-hover:scale-110">
+              <i class="fas fa-newspaper text-white text-xl"></i>
+            </div>
+            <span class="text-sm font-medium">Weekly Digest</span>
+          </div>
+          
+          <div class="flex flex-col items-center text-indigo-100 group">
+            <div class="w-14 h-14 bg-white/70 rounded-full flex items-center justify-center mb-3 group-hover:bg-white/30 transition-all duration-300 group-hover:scale-110">
+              <i class="fas fa-rocket text-white text-xl"></i>
+            </div>
+            <span class="text-sm font-medium">Latest Trends</span>
+          </div>
+          
+          <div class="flex flex-col items-center text-indigo-100 group">
+            <div class="w-14 h-14 bg-white/70 rounded-full flex items-center justify-center mb-3 group-hover:bg-white/30 transition-all duration-300 group-hover:scale-110">
+              <i class="fas fa-users text-white text-xl"></i>
+            </div>
+            <span class="text-sm font-medium">Expert Insights</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  
+</div>
+
+<!-- Scripts -->
+<script src="../../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+
+
+
+
+
+<script>
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+  });
+
+  // GSAP Animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate hero elements
+  gsap.timeline()
+    .from(".gradient-text", { opacity: 0, y: 50, duration: 1, delay: 0.5 })
+    .from(".text-gray-800", { opacity: 0, y: 50, duration: 1 }, "-=0.7")
+    .from(".text-indigo-600", { opacity: 0, y: 50, duration: 1 }, "-=0.7");
+
+  // Parallax effect for background elements
+  gsap.to(".floating", {
+    y: -50,
+    duration: 2,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".floating",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  // Load more functionality
+  // document.getElementById('loadMore')?.addEventListener('click', function() {
+  //   // Add your load more logic here
+  //   console.log('Load more clicked');
+  // });
+
+  // Load More Button AJAX Pagination
+  const loadMoreBtn = document.getElementById('loadMore');
+  let currentPage = Number('1');
+  const totalPages = Number('1');
+  const grid = document.querySelector('.grid.sm\\:grid-cols-2');
+
+  if (loadMoreBtn && grid) {
+    loadMoreBtn.addEventListener('click', function() {
+      if (currentPage >= totalPages) return;
+      loadMoreBtn.disabled = true;
+      loadMoreBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-3"></i>Loading...';
+
+      fetch(`?page=${currentPage + 1}`, {
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+      })
+      .then(response => response.json())
+      .then(data => {
+        data.blogs.forEach(blog => {
+          const article = document.createElement('article');
+          article.className = "group card-hover bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700 flex flex-col h-full p-0 md:p-0";
+          article.innerHTML = `
+            <div class="relative overflow-hidden">
+              <a href="${blog.url || '/blog/post/' + blog.slug + '/'}">
+                <img src="${blog.image_url}" alt="${blog.title}" class="w-full h-56 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700 rounded-t-3xl">
+              </a>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl"></div>
+              <div class="absolute top-4 right-4 glass-effect rounded-full px-4 py-2">
+                <span class="text-xs font-bold text-gray-700 dark:text-gray-200">
+                  <i class="fas fa-eye mr-1"></i>0
+                </span>
+              </div>
+              <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+                  ${blog.category}
+                </span>
+              </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-between p-8 md:p-10">
+              <div>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-4 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2 leading-tight">
+                  <a href="${blog.url || '/blog/post/' + blog.slug + '/'}">${blog.title}</a>
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-6 line-clamp-3 leading-relaxed">${blog.excerpt || ''}</p>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                <div class="flex items-center space-x-2 md:space-x-3 text-xs md:text-sm text-gray-500 dark:text-gray-400">
+                  <div class="flex items-center space-x-1 md:space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
+                      <i class="fas fa-user text-white text-xs"></i>
+                    </div>
+                    <span class="font-medium">${blog.author}</span>
+                  </div>
+                  <span>•</span>
+                  <span class="font-medium">${blog.read_duration}m read</span>
+                </div>
+                <a href="${blog.url || '/blog/post/' + blog.slug + '/'}" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 font-bold text-xs md:text-sm group-hover:translate-x-2 transition-all duration-300">
+                  Read More <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          `;
+          grid.appendChild(article);
+        });
+        currentPage++;
+        if (!data.has_next) {
+          loadMoreBtn.style.display = 'none';
+        } else {
+          loadMoreBtn.disabled = false;
+          loadMoreBtn.innerHTML = '<i class="fas fa-plus mr-3"></i>Load More Stories';
+        }
+        AOS.refresh();
+      })
+      .catch(() => {
+        loadMoreBtn.disabled = false;
+        loadMoreBtn.innerHTML = '<i class="fas fa-plus mr-3"></i>Load More Stories';
+      });
+    });
+  }
+
+// Make entire blog cards clickable
+document.addEventListener('DOMContentLoaded', function() {
+  // For featured posts
+  const featuredCards = document.querySelectorAll('article[data-url]');
+  featuredCards.forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function(e) {
+      // Don't trigger if clicking on a link
+      if (e.target.tagName !== 'A' && !e.target.closest('a')) {
+        window.location.href = this.dataset.url;
+      }
+    });
+  });
+
+  // For regular blog grid cards
+  const blogCards = document.querySelectorAll('.grid.sm\\:grid-cols-2 article');
+  blogCards.forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function(e) {
+      // Don't trigger if clicking on a link
+      if (e.target.tagName !== 'A' && !e.target.closest('a')) {
+        const link = this.querySelector('h3 a');
+        if (link) {
+          window.location.href = link.href;
+        }
+      }
+    });
+  });
+});
+
+
+
+
+</script>
+
+  
+
+<!-- Meta-style Subscribe Bar -->
+<section class="bg-white-500 text-white px-4 sm:px-6 py-8 sm:py-10 border-b-2 border-white">
+  <div class="max-w-3xl mx-auto flex flex-col items-center text-center">
+    <h2 class="text-2xl font-bold text-black mb-2">Get the latest updates from RIS International Services</h2>
+    <p class="mb-4 text-base text-gray-800">
+      Subscribe with your email to receive news, events, and product updates from us.
+    </p>
+    <form id="subscribe-form" class="w-full flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <input
+        type="email"
+        id="footer-input"
+        placeholder="Email address"
+        required
+        class="px-4 py-2 !bg-black/60 text-black w-full sm:w-64 rounded-md"
+      />
+      <button
+        type="submit"
+        id="footer-button"
+        class="bg-blue-600 hover:bg-red-600 text-white px-6 py-2 rounded-full font-semibold transition"
+      >
+        Subscribe
+      </button>
+    </form>
+    <span id="subscribe-message" style="display:block;margin-top:0.5rem;font-size:14px;"></span>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="px-4 sm:px-6 pt-10 pb-6 text-sm" style="background-color: #f5f5f7;">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Top: Logo + Nav | Social -->
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start pb-6 gap-y-8 md:gap-y-0">
+
+      
+      <!-- Logo -->
+      <div class="flex justify-center md:justify-start items-end w-full h-8 md:h-12 md:w-auto">
+        
+
+
+
+<img src="../static/main/images/RISNEWLOGO.png" alt="Logo" style="height:100%; width:auto;">
+      </div>
+   
+
+
+      <!-- Navigation Links -->
+      <div class="flex flex-wrap md:mt-5 justify-center md:justify-start w-full md:w-auto mt-6 md:mt-0 gap-x-8 gap-y-2 text-sm font-medium uppercase tracking-wide text-gray-600">
+        <a href="../aboutus/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">About</a>
+        <a href="../contact/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Contact</a>
+        <a href="../careers/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Careers</a>
+        <a href="../services/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Services</a>
+        
+      </div>
+      
+
+      <!-- Social Icons -->
+      <div class="w-full md:w-1/3 flex justify-center md:justify-end gap-4 text-lg mt-4 md:mt-4">
+        <a href="https://www.linkedin.com/company/retouch-it-services-private-limited/posts/?feedView=all" class="border border-gray-400 hover:border-black rounded-full w-10 h-10 flex items-center justify-center bg-transparent transition-colors">
+          <i class="fab fa-linkedin-in text-gray-600"></i>
+        </a>
+        <a href="https://www.facebook.com/share/1E1NiVWhDX/" class="border border-gray-400 hover:border-black rounded-full w-10 h-10 flex items-center justify-center bg-transparent transition-colors">
+          <i class="fab fa-facebook-f text-gray-600"></i>
+        </a>
+        <a href="https://x.com/retouchin_it" class="border border-gray-400 hover:border-black rounded-full w-10 h-10 flex items-center justify-center bg-transparent transition-colors">
+          <i class="fab fa-x-twitter text-gray-600"></i>
+        </a>
+        <a href="https://www.instagram.com/retouchitservices.in?igsh=a29wM3Q2MGN4dHh2" class="border border-gray-400 hover:border-black rounded-full w-10 h-10 flex items-center justify-center bg-transparent transition-colors">
+          <i class="fab fa-instagram text-gray-600"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 mb-4"></div>
+
+    <!-- Bottom Legal Links -->
+    <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-3 mt-6">
+      <div class="flex flex-wrap justify-center md:justify-start gap-4">
+        <a href="../privacy-policy/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Privacy Statement</a>
+        <a href="../terms-and-conditions/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Terms & Conditions</a>
+        <a href="#" onclick="showCookieSettings(); return false;" class="hover:underline text-gray-600 hover:text-black transition-colors cursor-pointer focus:outline-none">Cookie Settings</a>
+        <a href="../accessibility-statement/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Accessibility Statement</a>
+        <a href="../sitemap/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Sitemap</a>
+      </div>
+      <div class="w-full md:w-auto text-center md:text-right text-xs text-gray-600 mt-4 md:mt-0">
+        &copy; 2025 RIS International Services. All Rights Reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Subscribe JS -->
+<script>
+document.getElementById("subscribe-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const email = document.getElementById("footer-input").value;
+
+  fetch("../subscribe/index.html", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "X-CSRFToken": getCookie("csrftoken")
+    },
+    body: new URLSearchParams({ email })
+  })
+  .then(response => response.json())
+  .then(data => {
+    const messageEl = document.getElementById("subscribe-message");
+    messageEl.textContent = data.message;
+    messageEl.style.color = data.status === "success" ? "green" : "red";
+  });
+
+  function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== "") {
+      const cookies = document.cookie.split(";");
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === name + "=") {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+});
+
+// Cookie Settings functionality
+function showCookieSettings() {
+  // Check if the cookie manager exists (from index.html)
+  if (typeof window.CookieConsent !== 'undefined') {
+    window.CookieConsent.showCookieSettings();
+  } else if (typeof cookieManager !== 'undefined') {
+    cookieManager.showCookieSettings();
+  } else {
+    // Fallback: show cookie banner if no consent given yet
+    const banner = document.getElementById('cookieBanner');
+    if (banner) {
+      banner.classList.add('show');
+    } else {
+      // If no cookie system is loaded, show a simple alert
+      alert('Cookie settings are not available on this page. Please visit the homepage to manage your cookie preferences.');
+    }
+  }
+}
+</script>
+  
+  <script src="../static/main/js/global.js" defer></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- AOS JS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100
+    });
+  </script>
+
+  <!-- Slideout JS -->
+  <script src="../../cdn.jsdelivr.net/npm/slideout%401.0.1/dist/slideout.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  
+  <!-- Add this just before the closing </body> tag in your base template -->
+<a href="../contact/index.html" 
+   class="fixed z-50 bottom-6 right-6 md:bottom-8 md:right-8 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg flex items-center justify-center w-14 h-14 md:w-16 md:h-16 transition-all duration-300 group"
+   aria-label="Contact Us"
+   style="box-shadow: 0 4px 24px rgba(59,130,246,0.15);">
+    <svg class="w-7 h-7 md:w-8 md:h-8 transition-transform duration-200 group-hover:scale-110" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5V6.75A2.25 2.25 0 0018.75 4.5H5.25A2.25 2.25 0 003 6.75v10.5A2.25 2.25 0 005.25 19.5h13.5A2.25 2.25 0 0021 17.25V13.5m-9 0l3-3m0 0l-3-3m3 3H3"></path>
+    </svg>
+    <span class="sr-only">Contact Us</span>
+</a>
+  <!-- Enterprise Cookie Consent Banner -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div class="cookie-banner-content">
+        <svg class="cookie-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12C21,11.5 20.96,11 20.87,10.5C20.6,10.62 20.31,10.68 20,10.68C18.29,10.68 16.9,9.29 16.9,7.58C16.9,7.15 16.96,6.73 17.09,6.34C16.73,6.06 16.33,5.82 15.91,5.63C15.91,5.63 15.72,5.69 15.5,5.69C14.45,5.69 13.6,4.84 13.6,3.79C13.6,3.68 13.62,3.57 13.64,3.47C13.1,3.16 12.56,3 12,3M9.5,6A1.5,1.5 0 0,1 11,7.5A1.5,1.5 0 0,1 9.5,9A1.5,1.5 0 0,1 8,7.5A1.5,1.5 0 0,1 9.5,6M6.5,10A1.5,1.5 0 0,1 8,11.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 5,11.5A1.5,1.5 0 0,1 6.5,10M11.5,11A1.5,1.5 0 0,1 13,12.5A1.5,1.5 0 0,1 11.5,14A1.5,1.5 0 0,1 10,12.5A1.5,1.5 0 0,1 11.5,11M16.5,13A1.5,1.5 0 0,1 18,14.5A1.5,1.5 0 0,1 16.5,16A1.5,1.5 0 0,1 15,14.5A1.5,1.5 0 0,1 16.5,13M11,16A1.5,1.5 0 0,1 12.5,17.5A1.5,1.5 0 0,1 11,19A1.5,1.5 0 0,1 9.5,17.5A1.5,1.5 0 0,1 11,16Z" />
+        </svg>
+        
+        <div class="cookie-main-content">
+            <h2 id="cookie-title" class="cookie-title">We value your privacy</h2>
+            <div id="cookie-desc" class="cookie-text">
+                <p>We use cookies and similar technologies to provide the best experience on our website. Some cookies are necessary for the site to work, while others help us understand how you use our site and improve your experience. We also use cookies for advertising purposes. You can choose which cookies to allow.</p>
+            </div>
+            
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn-accept" id="acceptAllBtn" aria-label="Accept all cookies">
+                    Accept All
+                </button>
+                <button class="cookie-btn cookie-btn-decline" id="declineAllBtn" aria-label="Reject all non-essential cookies">
+                    Reject All
+                </button>
+                <button class="cookie-btn cookie-btn-settings" id="managePrefsBtn" aria-label="Customize cookie preferences">
+                    Manage Preferences
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enterprise Cookie Settings Modal -->
+<div id="cookieModal" class="cookie-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="cookie-modal-content">
+        <div class="cookie-modal-header">
+            <h3 id="modal-title">Privacy Preference Center</h3>
+            <p>When you visit our website, we store cookies on your browser to collect information. The information collected might relate to you, your preferences or your device, and is mostly used to make the site work as you expect it to and to provide a more personalized web experience.</p>
+        </div>
+        
+        <div class="cookie-modal-body">
+            <!-- Strictly Necessary Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Strictly Necessary Cookies
+                            <span class="status-badge status-always-on">Always Active</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services.
+                        </p>
+                        <div class="cookie-category-details">
+                            These cookies enable core functionality such as security, network management, and accessibility. Without these cookies, the website cannot function properly.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Authentication, security, load balancing, CSRF protection
+                        </div>
+                    </div>
+                    <div class="toggle-switch active disabled" aria-label="Strictly necessary cookies are always active">
+                        <span class="sr-only">Always Active</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Session ID:</strong> Maintains user session state</li>
+                        <li><strong>CSRF Token:</strong> Prevents cross-site request forgery</li>
+                        <li><strong>Load Balancer:</strong> Distributes traffic across servers</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Performance Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Performance Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular.
+                        </p>
+                        <div class="cookie-category-details">
+                            All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Google Analytics, Adobe Analytics, page load times, bounce rates
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="performanceToggle" data-type="performance" 
+                         role="switch" aria-checked="false" aria-labelledby="performance-label" tabindex="0">
+                        <span class="sr-only" id="performance-label">Enable performance cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Google Analytics:</strong> _ga, _gid, _gat (Analytics and reporting)</li>
+                        <li><strong>Adobe Analytics:</strong> s_cc, s_sq (User behavior analysis)</li>
+                        <li><strong>Hotjar:</strong> _hjid, _hjIncludedInSample (Heatmaps and recordings)</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Functional Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Functional Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages.
+                        </p>
+                        <div class="cookie-category-details">
+                            If you do not allow these cookies then some or all of these services may not function properly. This includes features like live chat, social media integration, and embedded videos.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Live chat, social media widgets, video players, language preferences
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="functionalToggle" data-type="functional" 
+                         role="switch" aria-checked="false" aria-labelledby="functional-label" tabindex="0">
+                        <span class="sr-only" id="functional-label">Enable functional cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>YouTube:</strong> YSC, VISITOR_INFO1_LIVE (Video functionality)</li>
+                        <li><strong>Vimeo:</strong> vuid (Video player preferences)</li>
+                        <li><strong>Intercom:</strong> intercom-* (Live chat support)</li>
+                        <li><strong>Zendesk:</strong> zendesk* (Customer support)</li>
+                        <li><strong>Social Media:</strong> Various cookies for social sharing</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Targeting Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Targeting Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+                        </p>
+                        <div class="cookie-category-details">
+                            They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Google Ads, Facebook Pixel, LinkedIn Insight, retargeting campaigns
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="targetingToggle" data-type="targeting" 
+                         role="switch" aria-checked="false" aria-labelledby="targeting-label" tabindex="0">
+                        <span class="sr-only" id="targeting-label">Enable targeting cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Google Ads:</strong> _gcl_au, IDE, test_cookie (Advertising and conversion tracking)</li>
+                        <li><strong>Facebook:</strong> _fbp, fr (Social media advertising)</li>
+                        <li><strong>LinkedIn:</strong> li_sugr, UserMatchHistory (Professional network advertising)</li>
+                        <li><strong>Microsoft Advertising:</strong> MUID, _uetsid (Bing Ads tracking)</li>
+                        <li><strong>Twitter:</strong> personalization_id (Social media advertising)</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+        
+        <div class="cookie-modal-footer">
+            <div class="footer-links">
+                <a href="../privacy-policy/index.html" class="footer-link" target="_blank">Privacy Policy</a>
+                <a href="../cookie-policy/index.html" class="footer-link" target="_blank">Cookie Policy</a>
+            </div>
+            <div class="footer-buttons">
+                <button class="cookie-btn cookie-btn-secondary" id="cancelBtn">
+                    Cancel
+                </button>
+                <button class="cookie-btn cookie-btn-primary" id="savePrefsBtn">
+                    Save Preferences
+                </button>
+            </div>
+        </div>
+        
+        <button class="cookie-modal-close" id="closeModalBtn" aria-label="Close cookie preferences">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Success Popup -->
+<div id="successPopup" class="success-popup hidden">
+    <div class="success-popup-content">
+        <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L18,9.5L16.59,8.09L11,13.67L7.41,10.09L6,11.5L11,16.5Z" />
+            </svg>
+        </div>
+        <h3>Preferences Saved</h3>
+        <p>Your cookie preferences have been updated successfully.</p>
+        <button class="cookie-btn cookie-btn-primary" id="closeSuccessBtn">
+            OK
+        </button>
+    </div>
+</div>
+
+<style>
+/* Keep all your existing CSS styles here - they're fine */
+/* Enterprise Cookie Consent Styles */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    z-index: 10000;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.cookie-banner.show {
+    transform: translateY(0);
+}
+
+.cookie-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cookie-icon {
+    width: 32px;
+    height: 32px;
+    color: #1a73e8;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.cookie-main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.cookie-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #202124;
+    margin: 0 0 8px 0;
+}
+
+.cookie-text {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cookie-btn {
+    padding: 8px 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background: #fff;
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.cookie-btn:hover {
+    background: #f8f9fa;
+    border-color: #1a73e8;
+}
+
+.cookie-btn-accept {
+    background: #1a73e8;
+    color: #fff;
+    border-color: #1a73e8;
+}
+
+.cookie-btn-accept:hover {
+    background: #1557b0;
+    border-color: #1557b0;
+}
+
+.cookie-btn-decline {
+    background: #fff;
+    color: #5f6368;
+    border-color: #dadce0;
+}
+
+.cookie-btn-decline:hover {
+    background: #f8f9fa;
+    color: #202124;
+}
+
+/* Cookie Modal Styles */
+.cookie-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cookie-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cookie-modal-content {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.cookie-modal-header {
+    padding: 24px 24px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cookie-modal-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202124;
+    margin: 0 0 12px 0;
+}
+
+.cookie-modal-header p {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cookie-modal-body {
+    padding: 0;
+}
+
+.cookie-category {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 24px;
+}
+
+.cookie-category:last-child {
+    border-bottom: none;
+}
+
+.cookie-category-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cookie-category-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.cookie-category-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #202124;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-badge {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-always-on {
+    background: #e8f5e8;
+    color: #137333;
+}
+
+.status-optional {
+    background: #fef7e0;
+    color: #b06000;
+}
+
+.cookie-category-desc {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
+}
+
+.cookie-category-details {
+    color: #5f6368;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.cookie-category-examples {
+    color: #5f6368;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Toggle Switch Styles */
+.toggle-switch {
+    width: 44px;
+    height: 24px;
+    background: #dadce0;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.toggle-switch:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.toggle-switch.active {
+    background: #1a73e8;
+}
+
+.toggle-switch.active:before {
+    transform: translateX(20px);
+}
+
+.toggle-switch.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.toggle-switch:focus {
+    outline: 2px solid #1a73e8;
+    outline-offset: 2px;
+}
+
+/* Vendor Information */
+.vendor-info {
+    margin-top: 16px;
+}
+
+.vendor-info summary {
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.vendor-info summary:hover {
+    text-decoration: underline;
+}
+
+.vendor-list {
+    margin: 12px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vendor-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+.vendor-list li:last-child {
+    border-bottom: none;
+}
+
+/* Modal Footer */
+.cookie-modal-footer {
+    padding: 16px 24px 24px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.cookie-btn-primary {
+    background: #1a73e8;
+    color: #fff;
+    border-color: #1a73e8;
+}
+
+.cookie-btn-primary:hover {
+    background: #1557b0;
+    border-color: #1557b0;
+}
+
+.cookie-btn-secondary {
+    background: #fff;
+    color: #5f6368;
+    border-color: #dadce0;
+}
+
+.cookie-btn-secondary:hover {
+    background: #f8f9fa;
+    color: #202124;
+}
+
+/* Close Button */
+.cookie-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    color: #5f6368;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.cookie-modal-close:hover {
+    background: #f8f9fa;
+    color: #202124;
+}
+
+.cookie-modal-close svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Success Popup */
+.success-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.success-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.success-popup.hidden {
+    display: none;
+}
+
+.success-popup-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.success-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    color: #137333;
+}
+
+.success-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.success-popup-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #202124;
+    margin: 0 0 8px 0;
+}
+
+.success-popup-content p {
+    color: #5f6368;
+    font-size: 14px;
+    margin: 0 0 24px 0;
+}
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cookie-banner-content {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+    
+    .cookie-icon {
+        align-self: flex-start;
+    }
+    
+    .cookie-buttons {
+        flex-direction: column;
+    }
+    
+    .cookie-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cookie-modal {
+        padding: 10px;
+    }
+    
+    .cookie-modal-content {
+        max-height: 95vh;
+    }
+    
+    .cookie-modal-header {
+        padding: 20px 20px 16px;
+    }
+    
+    .cookie-category {
+        padding: 20px;
+    }
+    
+    .cookie-category-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .toggle-switch {
+        align-self: flex-start;
+    }
+    
+    .cookie-modal-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .footer-buttons {
+        width: 100%;
+    }
+    
+    .footer-buttons .cookie-btn {
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-banner-content {
+        padding: 12px;
+    }
+    
+    .cookie-title {
+        font-size: 16px;
+    }
+    
+    .cookie-text {
+        font-size: 13px;
+    }
+    
+    .cookie-modal-header {
+        padding: 16px;
+    }
+    
+    .cookie-category {
+        padding: 16px;
+    }
+    
+    .success-popup-content {
+        padding: 24px;
+    }
+}
+</style>
+
+<script>
+// Simple Cookie Consent System - Direct approach
+(function() {
+    'use strict';
+    
+    // Cookie preferences
+    let cookiePreferences = {
+        necessary: true,
+        performance: false,
+        functional: false,
+        targeting: false
+    };
+    
+    // Utility functions
+    function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+        const isSecure = window.location.protocol === 'index.html';
+        const secureFlag = isSecure ? ';Secure' : '';
+        document.cookie = ${name}=${value};expires=${expires.toUTCString()};path=/;SameSite=Lax${secureFlag};
+        console.log('Cookie set:', name, '=', value);
+    }
+    
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+    
+    function showBanner() {
+        const banner = document.getElementById('cookieBanner');
+        if (banner) {
+            banner.classList.add('show');
+            console.log('Banner shown');
+        }
+    }
+    
+    function hideBanner() {
+        const banner = document.getElementById('cookieBanner');
+        if (banner) {
+            banner.classList.remove('show');
+            console.log('Banner hidden');
+        }
+    }
+    
+    function showModal() {
+        const modal = document.getElementById('cookieModal');
+        if (modal) {
+            modal.classList.add('show');
+            updateToggleStates();
+        }
+    }
+    
+    function hideModal() {
+        const modal = document.getElementById('cookieModal');
+        if (modal) {
+            modal.classList.remove('show');
+        }
+    }
+    
+    function showSuccessPopup() {
+        const popup = document.getElementById('successPopup');
+        if (popup) {
+            popup.classList.remove('hidden');
+            popup.classList.add('show');
+            setTimeout(() => {
+                closeSuccessPopup();
+            }, 3000);
+        }
+    }
+    
+    function closeSuccessPopup() {
+        const popup = document.getElementById('successPopup');
+        if (popup) {
+            popup.classList.remove('show');
+            setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 300);
+        }
+    }
+    
+    function updateToggleStates() {
+        Object.keys(cookiePreferences).forEach(type => {
+            const toggle = document.getElementById(${type}Toggle);
+            if (toggle) {
+                toggle.classList.toggle('active', cookiePreferences[type]);
+                toggle.setAttribute('aria-checked', cookiePreferences[type]);
+            }
+        });
+    }
+    
+    function saveConsent() {
+        setCookie('cookie_consent', 'granted', 365);
+        setCookie('cookie_preferences', JSON.stringify(cookiePreferences), 365);
+        hideBanner();
+        console.log('Consent saved with preferences:', cookiePreferences);
+    }
+    
+    function acceptAllCookies() {
+        console.log('Accept All clicked');
+        cookiePreferences = {
+            necessary: true,
+            performance: true,
+            functional: true,
+            targeting: true
+        };
+        saveConsent();
+    }
+    
+    function declineAllCookies() {
+        console.log('Decline All clicked');
+        cookiePreferences = {
+            necessary: true,
+            performance: false,
+            functional: false,
+            targeting: false
+        };
+        saveConsent();
+    }
+    
+    function toggleCookie(type) {
+        if (type !== 'necessary') {
+            cookiePreferences[type] = !cookiePreferences[type];
+            updateToggleStates();
+            console.log('Toggled', type, 'to', cookiePreferences[type]);
+        }
+    }
+    
+    function saveCustomCookies() {
+        console.log('Save Custom clicked');
+        saveConsent();
+        hideModal();
+        showSuccessPopup();
+    }
+    
+    function init() {
+        console.log('Initializing cookie consent...');
+        
+        // Check existing consent
+        const consent = getCookie('cookie_consent');
+        const preferences = getCookie('cookie_preferences');
+        
+        console.log('Existing consent:', consent);
+        console.log('Existing preferences:', preferences);
+        
+        if (consent === 'granted' && preferences) {
+            try {
+                cookiePreferences = JSON.parse(preferences);
+                console.log('Consent already given, not showing banner');
+                return; // Don't show banner
+            } catch (e) {
+                console.error('Error parsing preferences:', e);
+            }
+        }
+        
+        // Show banner if no valid consent
+        console.log('No valid consent found, showing banner');
+        showBanner();
+    }
+    
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+    
+    // Set up event listeners when DOM is ready
+    function setupEventListeners() {
+        console.log('Setting up event listeners...');
+        
+        // Banner buttons
+        const acceptBtn = document.getElementById('acceptAllBtn');
+        const declineBtn = document.getElementById('declineAllBtn');
+        const manageBtn = document.getElementById('managePrefsBtn');
+        
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', acceptAllCookies);
+            console.log('Accept button listener added');
+        }
+        
+        if (declineBtn) {
+            declineBtn.addEventListener('click', declineAllCookies);
+            console.log('Decline button listener added');
+        }
+        
+        if (manageBtn) {
+            manageBtn.addEventListener('click', showModal);
+            console.log('Manage button listener added');
+        }
+        
+        // Modal buttons
+        const saveBtn = document.getElementById('savePrefsBtn');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const closeBtn = document.getElementById('closeModalBtn');
+        const successBtn = document.getElementById('closeSuccessBtn');
+        
+        if (saveBtn) {
+            saveBtn.addEventListener('click', saveCustomCookies);
+        }
+        
+        if (cancelBtn) {
+            cancelBtn.addEventListener('click', hideModal);
+        }
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', hideModal);
+        }
+        
+        if (successBtn) {
+            successBtn.addEventListener('click', closeSuccessPopup);
+        }
+        
+        // Toggle switches
+        const toggles = document.querySelectorAll('.toggle-switch[data-type]');
+        toggles.forEach(toggle => {
+            const type = toggle.getAttribute('data-type');
+            if (type && type !== 'necessary') {
+                toggle.addEventListener('click', () => toggleCookie(type));
+                
+                // Keyboard support
+                toggle.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleCookie(type);
+                    }
+                });
+            }
+        });
+        
+        // Close modal on outside click
+        const modal = document.getElementById('cookieModal');
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    hideModal();
+                }
+            });
+        }
+        
+        // ESC key support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('cookieModal');
+                const popup = document.getElementById('successPopup');
+                
+                if (modal && modal.classList.contains('show')) {
+                    hideModal();
+                } else if (popup && popup.classList.contains('show')) {
+                    closeSuccessPopup();
+                }
+            }
+        });
+        
+        console.log('Event listeners setup complete');
+    }
+    
+    // Setup event listeners when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupEventListeners);
+    } else {
+        setupEventListeners();
+    }
+    
+    // Make functions globally available for debugging
+    window.cookieConsent = {
+        acceptAll: acceptAllCookies,
+        declineAll: declineAllCookies,
+        showSettings: showModal,
+        getPreferences: () => cookiePreferences,
+        getCookie: getCookie,
+        setCookie: setCookie
+    };
+    
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"d3f109a7c0e447f5a90144592920e153","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from risinternational.net/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 07:20:02 GMT -->
+</html>

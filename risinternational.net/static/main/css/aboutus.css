@@ -1,0 +1,1852 @@
+/* Modern About Us Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Section Floating Shapes */
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape-1 {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 150px;
+  height: 150px;
+  top: 60%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.shape-3 {
+  width: 80px;
+  height: 80px;
+  bottom: 30%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+.shape-4 {
+  width: 120px;
+  height: 120px;
+  top: 10%;
+  right: 30%;
+  animation-delay: 1s;
+}
+
+/* Team Carousel */
+.team-carousel {
+  transform: translateX(0);
+}
+
+.team-card {
+  min-width: 320px;
+}
+
+.carousel-btn {
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Counter Animation */
+.counter {
+  transition: all 0.3s ease;
+}
+
+/* Rotating Text Animation */
+.rotating-text {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Service Cards Pro - Main Implementation */
+.service-card-pro {
+  position: relative;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.service-card-pro:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.service-image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f1f5f9;
+}
+
+/* Background Images with Fallbacks */
+.work-bg {
+  background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&amp;h=300&amp;fit=crop&amp;crop=center');
+  background-color: #dbeafe;
+}
+
+.clients-bg {
+  background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&amp;h=300&amp;fit=crop&amp;crop=center');
+  background-color: #fed7aa;
+}
+
+.careers-bg {
+  background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&amp;h=300&amp;fit=crop&amp;crop=center');
+  background-color: #dcfce7;
+}
+
+.ai-bg {
+  background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&amp;h=300&amp;fit=crop&amp;crop=center');
+  background-color: #e0e7ff;
+}
+
+.cloud-bg {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&amp;h=300&amp;fit=crop&amp;crop=center');
+  background-color: #f0f9ff;
+}
+
+.marketing-bg {
+  background-image: url('https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=500&amp;h=300&amp;fit=crop&amp;crop=center');
+  background-color: #fef3c7;
+}
+
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.8), rgba(249, 115, 22, 0.8));
+  transition: all 0.3s ease;
+}
+
+.service-card-pro:hover .service-overlay {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.9), rgba(249, 115, 22, 0.9));
+}
+
+.service-content-pro {
+  position: relative;
+  z-index: 10;
+  padding: 40px 30px 30px !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-top: 150px;
+  border-radius: 20px 20px 0 0;
+}
+
+.service-icon-pro {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px !important;
+  height: 70px !important;
+  background: linear-gradient(135deg, #2563eb, #f97316);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+  border: 3px solid white;
+  color: white;
+  font-size: 1.75rem !important;
+}
+
+.service-title-pro {
+  font-size: 1.75rem !important;
+  font-weight: 700;
+  color: #06090c;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.service-description-pro {
+  color: #040609;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1rem !important;
+}
+.service-features-pro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feature-tag-pro {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  color: #475569;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.service-card-pro:hover .feature-tag-pro {
+  background: linear-gradient(135deg, #2563eb, #f97316);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.service-stats-pro {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px !important;
+  padding: 20px 0 !important;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.stat-pro {
+  text-align: center;
+}
+
+.stat-number-pro {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f97316;
+  margin-bottom: 2px;
+}
+
+.stat-label-pro {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-btn-pro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb, #f97316);
+  color: white;
+  padding: 15px 25px !important;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: auto !important;
+  text-align: center;
+}
+
+.service-card-pro {
+    height: 650px !important;
+}
+
+.service-content-pro {
+    padding: 45px 35px 35px !important;
+    margin-top: 140px;
+    height: calc(100% - 140px) !important;
+}
+
+.service-features-pro {
+    margin-bottom: 25px !important;
+}
+
+.service-btn-pro:hover {
+  background: linear-gradient(135deg, #f97316, #10b981);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+/* Values Section */
+.values-section {
+  padding: 120px 0;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.values-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="50" cy="10" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="10" cy="90" r="1" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.value-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  height: 420px;
+}
+
+.value-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.value-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+}
+
+.value-card:hover .value-bg {
+  transform: scale(1.1);
+}
+
+/* Value Background Images */
+.quality-bg {
+  background-image: linear-gradient(rgba(37, 99, 235, 0.3), rgba(37, 99, 235, 0.3)), 
+                    url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&amp;h=200&amp;fit=crop');
+}
+
+.team-bg {
+  background-image: linear-gradient(rgba(249, 115, 22, 0.3), rgba(249, 115, 22, 0.3)), 
+                    url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&amp;h=200&amp;fit=crop');
+}
+
+.innovation-bg {
+  background-image: linear-gradient(rgba(16, 185, 129, 0.3), rgba(16, 185, 129, 0.3)), 
+                    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&amp;h=200&amp;fit=crop');
+}
+
+.success-bg {
+  background-image: linear-gradient(rgba(245, 158, 11, 0.3), rgba(245, 158, 11, 0.3)), 
+                    url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&amp;h=200&amp;fit=crop');
+}
+
+.security-bg {
+  background-image: linear-gradient(rgba(139, 92, 246, 0.3), rgba(139, 92, 246, 0.3)), 
+                    url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&amp;h=200&amp;fit=crop');
+}
+
+.commitment-bg {
+  background-image: linear-gradient(rgba(239, 68, 68, 0.3), rgba(239, 68, 68, 0.3)), 
+                    url('https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&amp;h=200&amp;fit=crop');
+}
+
+.value-content {
+  padding: 30px 25px 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin-top: 120px;
+}
+
+.value-icon-wrapper {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.value-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #2563eb, #f97316);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+  border: 4px solid white;
+}
+
+.value-card:hover .value-icon {
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
+}
+
+.value-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.value-content p {
+  color: #64748b;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
+
+.value-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.feature-tag {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  color: #475569;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover .feature-tag {
+  background: linear-gradient(135deg, #2563eb, #f97316);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Glass Morphism Effects */
+.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
+}
+
+.bg-opacity-10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-opacity-20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Custom Scrollbar */
+.team-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.team-carousel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.team-carousel::-webkit-scrollbar-thumb {
+  background: rgba(255, 111, 97, 0.6);
+  border-radius: 4px;
+}
+
+.team-carousel::-webkit-scrollbar-thumb:hover {
+  background: rgba(171, 84, 76, 0.8);
+}
+
+/* Loading Animation */
+.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Intersection Observer Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover Effects */
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+}
+
+.group:hover .group-hover\:rotate-12 {
+  transform: rotate(12deg);
+}
+
+.group:hover .group-hover\:translate-x-1 {
+  transform: translateX(0.25rem);
+}
+
+/* Performance Optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-shape {
+    display: none;
+  }
+  
+  .team-carousel {
+    padding: 0 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .team-card {
+    min-width: 280px;
+    scroll-snap-align: center;
+  }
+  
+  .carousel-btn {
+    display: none;
+  }
+  
+  .values-section {
+    padding: 80px 0;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .value-card {
+    height: 380px;
+  }
+  
+  .value-content {
+    padding: 25px 20px 20px;
+    margin-top: 100px;
+  }
+  
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+  
+  .value-icon-wrapper {
+    top: -40px;
+  }
+  
+  .value-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .value-content p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+  
+  .feature-tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .value  .value-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .value-content p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+  
+  .feature-tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
+
+/* Strong Black Hover Effect for About Us Main Image */
+.about-main-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-main-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.4s ease;
+    z-index: 2;
+    opacity: 0;
+}
+
+.about-main-image:hover::before {
+    background: rgba(0, 0, 0, 0.8); /* Much darker overlay */
+    opacity: 1;
+}
+
+.about-main-image img {
+    transition: all 0.4s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(1);
+}
+
+.about-main-image:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7); /* Darken the image itself */
+}
+
+/* Strong overlay text that appears on hover */
+.about-main-image .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.about-main-image:hover .overlay-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(-10px);
+}
+
+.overlay-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.overlay-content p {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Alternative: Even stronger black effect */
+.about-main-image-dark {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.about-main-image-dark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.about-main-image-dark:hover::before {
+    opacity: 1;
+}
+
+.about-main-image-dark img {
+    transition: all 0.3s ease;
+    filter: brightness(1);
+}
+
+.about-main-image-dark:hover img {
+    filter: brightness(0.4) contrast(1.2);
+    transform: scale(1.05);
+}
+
+/* Business/Team Background */
+/* Replace background color with background image */
+#story {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&amp;h=1080&amp;fit=crop') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.story-section-enhanced {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&amp;h=1080&amp;fit=crop') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+/* Remove any conflicting styles */
+.story-section-enhanced::before {
+    display: none !important;
+}
+/* Add these dark mode specific styles at the end of your aboutus.css file */
+
+/* Dark Mode Service Cards Fix */
+body.dark-mode .service-title-pro {
+    color: #000000 !important;
+}
+
+body.dark-mode .service-description-pro {
+    color: #ffffff !important; /* Change grey text to WHITE */
+}
+
+body.dark-mode .what-we-do {
+    background-color: var(--dark-color);
+}
+
+body.dark-mode .what-we-do h2,
+body.dark-mode .what-we-do > .container > .text-center > h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .what-we-do p {
+    color: #e5e7eb !important;
+}
+/* Fix for value cards in dark mode */
+body.dark-mode .value-content h3 {
+    color: #1e293b !important; /* Keep dark color since cards have white background */
+}
+
+body.dark-mode .value-content p {
+    color: #64748b !important; /* Keep original color for readability */
+}
+
+/* Fix for other headings that might be affected */
+body.dark-mode section h2 {
+    color: var(--light-color) !important;
+}
+
+body.dark-mode section h3 {
+    color: var(--light-color) !important;
+}
+
+/* Exception for white background cards */
+body.dark-mode .service-card-pro h3,
+body.dark-mode .value-card h3 {
+    color: #000000 !important; /* Black text on white cards */
+}
+/* Helper class for dark mode text */
+body.dark-mode .dark-mode-white {
+    color: var(--light-color) !important;
+}
+
+/* Dark Mode - What We Do Cards Paragraph Text Fix */
+body.dark-mode .service-content-pro p {
+    color: #000000 !important; /* Force BLACK text for paragraphs */
+}
+
+body.dark-mode .service-description-pro {
+    color: #000000 !important; /* Force BLACK text for descriptions */
+}
+
+/* Also fix any other text in service cards */
+body.dark-mode .service-card-pro p {
+    color: #000000 !important; /* Force BLACK for all paragraphs in service cards */
+}
+
+/* Our Mission Text - Change Blue to White */
+#story .bg-white.bg-opacity-10 p {
+    color: #ffffff !important; /* Change blue text to WHITE */
+}
+
+/* Alternative targeting - if above doesn't work */
+#story .text-gray-300 {
+    color: #ffffff !important; /* Change to WHITE */
+}
+
+/* Our Mission Heading - White color in LIGHT mode */
+#story h3 {
+    color: #ffffff !important; /* Force WHITE color for Our Mission heading */
+}
+
+/* Our Mission paragraph text - White in LIGHT mode */
+#story p {
+    color: #ffffff !important; /* Force WHITE color for Our Mission text */
+}
+
+/* More specific targeting if needed */
+#story .bg-white.bg-opacity-10 h3,
+#story .bg-white.bg-opacity-10 p {
+    color: #ffffff !important; /* Force WHITE color */
+}
+
+/* Team Section - Square Images and Black Names */
+#team img {
+    border-radius: 15px !important; /* Change from rounded-full to square with rounded corners */
+}
+
+/* More specific targeting if needed */
+.team-card img {
+    border-radius: 15px !important; /* Square shape with slight rounding */
+}
+
+/* Team Section - Change Names to White in Both Modes */
+#team h3,
+.team-card h3 {
+    color: #ffffff !important; /* White color for team names in both modes */
+}
+
+/* Ensure it works in both light and dark mode */
+body.dark-mode #team h3,
+body.dark-mode .team-card h3 {
+    color: #ffffff !important; /* White in dark mode */
+}
+
+body.light-mode #team h3,
+body.light-mode .team-card h3 {
+    color: #ffffff !important; /* White in light mode */
+}
+/* Team Section - Remove Border and Clean Square Images */
+#team img,
+.team-card img {
+    border: none !important; /* Remove border completely */
+    border-radius: 10px !important; /* Clean square with slight rounding */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important; /* Add subtle shadow for depth */
+}
+
+
+
+
+
+/* Add these mobile responsive styles at the end of your aboutus.css file */
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Hero Section Mobile */
+  .relative.h-screen {
+    height: 100vh;
+    padding: 0 1rem;
+  }
+  
+  .relative.h-screen h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .relative.h-screen p {
+    font-size: 1rem !important;
+    margin-bottom: 2rem;
+  }
+  
+  .flex.flex-col.sm\:flex-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .flex.flex-col.sm\:flex-row a {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Story Section Mobile */
+  #story {
+    padding: 3rem 0;
+    background-attachment: scroll !important;
+  }
+  
+  #story .container {
+    padding: 0 1rem;
+  }
+  
+  #story h2 {
+    font-size: 2rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  #story .grid.lg\:grid-cols-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  #story .space-y-6 {
+    gap: 1rem;
+  }
+  
+  #story .bg-white.bg-opacity-10 {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #story .flex.items-start.gap-4 {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #story .w-16.h-16 {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1rem;
+  }
+  
+  #story .grid.grid-cols-3 {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    text-align: center;
+  }
+
+  /* What We Do Section Mobile */
+  .what-we-do {
+    padding: 3rem 0;
+  }
+  
+  .what-we-do .container {
+    padding: 0 1rem;
+  }
+  
+  .what-we-do h2 {
+    font-size: 2rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  .what-we-do .grid.md\:grid-cols-3 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .service-card-pro {
+    height: auto;
+    min-height: 450px;
+  }
+  
+  .service-content-pro {
+    padding: 2rem 1.5rem 1.5rem;
+    margin-top: 120px;
+  }
+  
+  .service-title-pro {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-description-pro {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-features-pro {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-tag-pro {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .service-stats-pro {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-number-pro {
+    font-size: 1rem;
+  }
+  
+  .stat-label-pro {
+    font-size: 0.7rem;
+  }
+
+  /* Team Section Mobile */
+  #team {
+    padding: 3rem 0;
+  }
+  
+  #team .container {
+    padding: 0 1rem;
+  }
+  
+  #team h2 {
+    font-size: 2rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  .team-carousel {
+    padding: 0 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .team-carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .team-card {
+    min-width: 280px;
+    scroll-snap-align: center;
+    margin: 0 0.5rem;
+  }
+  
+  .team-card .bg-white {
+    padding: 1.5rem;
+  }
+  
+  .team-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-card p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-card img {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .carousel-btn {
+    display: none;
+  }
+
+  /* Values Section Mobile */
+  .values-section {
+    padding: 3rem 0;
+  }
+  
+  .values-section .container {
+    padding: 0 1rem;
+  }
+  
+  .values-section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 1rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .value-card {
+    height: auto;
+    min-height: 350px;
+  }
+  
+  .value-content {
+    padding: 2rem 1.5rem 1.5rem;
+    margin-top: 80px;
+  }
+  
+  .value-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+  
+  .value-icon-wrapper {
+    top: -1.5rem;
+  }
+  
+  .value-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .value-content p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-tag {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Statistics Section Mobile */
+  .py-20.bg-gradient-to-r {
+    padding: 3rem 0;
+  }
+  
+  .grid.grid-cols-2.md\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .text-4xl.md\:text-5xl {
+    font-size: 2rem !important;
+  }
+  
+  .counter {
+    font-size: 2rem !important;
+  }
+
+  /* CTA Section Mobile */
+  .py-20.bg-gradient-to-br {
+    padding: 3rem 0;
+  }
+  
+  .text-4xl.md\:text-5xl.font-bold {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+  
+  .rotating-text {
+    font-size: 1.5rem !important;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  .flex.flex-col.sm\:flex-row.gap-4 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .flex.flex-col.sm\:flex-row.gap-4 a {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  /* Floating Shapes - Hide on Mobile */
+  .floating-shape {
+    display: none;
+  }
+
+  /* General Mobile Improvements */
+  .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .text-center.mb-16 {
+    margin-bottom: 2rem;
+  }
+  
+  .w-24.h-1.bg-accent {
+    width: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .max-w-3xl.mx-auto {
+    max-width: 100%;
+  }
+  
+  .max-w-4xl.mx-auto {
+    max-width: 100%;
+  }
+  
+  .max-w-6xl.mx-auto {
+    max-width: 100%;
+  }
+}
+
+/* Extra Small Mobile (320px and below) */
+@media (max-width: 480px) {
+  .relative.h-screen h1 {
+    font-size: 2rem !important;
+  }
+  
+  .service-card-pro {
+    min-height: 400px;
+  }
+  
+  .team-card {
+    min-width: 260px;
+  }
+  
+  .value-card {
+    min-height: 320px;
+  }
+  
+  .grid.grid-cols-2.md\:grid-cols-4 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-content-pro {
+    margin-top: 100px;
+  }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .relative.h-screen {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  
+  .floating-shape {
+    display: none;
+  }
+}
+/* Add this at the end of your aboutus.css file */
+
+/* Our Story Section - Change Blue to White in Normal Mode */
+#story h2 {
+    color: #ffffff !important; /* White color for "Our Story" heading */
+}
+
+#story p {
+    color: #ffffff !important; /* White color for all paragraphs */
+}
+
+#story .text-xl.opacity-90 {
+    color: #ffffff !important; /* White color for description text */
+}
+/* Add this at the end of your aboutus.css file */
+
+/* Meet Our Team Heading - Change Blue to White */
+#team h2 {
+    color: #ffffff !important; /* White color for "Meet Our Team" heading */
+}
+
+#team .text-4xl.md\:text-5xl.font-bold {
+    color: #ffffff !important; /* White color for main heading */
+}
+/* Add this at the end of your aboutus.css file */
+
+/* Team Section - Change Social Media Icons to White */
+#team .w-10.h-10 i,
+.team-card .w-10.h-10 i {
+    color: #ffffff !important; /* White color for social media icons */
+}
+
+#team .w-10.h-10:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important; /* White hover background */
+}
+/* Add this at the end of your aboutus.css file */
+
+/* CTA Section Buttons - Visible in Both Modes */
+.bg-accent.hover\:bg-opacity-90 {
+    background-color: #ff6f61 !important; /* Force accent color */
+    color: #ffffff !important; /* White text */
+    border: 2px solid #ff6f61 !important; /* Add border for visibility */
+}
+
+.bg-accent.hover\:bg-opacity-90:hover {
+    background-color: #ffffff !important; /* White background on hover */
+    color: #ff6f61 !important; /* Accent color text on hover */
+    border: 2px solid #ffffff !important; /* White border on hover */
+}
+/* Add this at the end of your aboutus.css file */
+
+/* Our Mission Card - Change "Meet Our Team" Text Color Orange to White */
+#story .bg-gradient-to-r.from-primary.to-accent {
+    color: #ffffff !important; /* Change text color to white */
+}
+/* Add this at the end of your aboutus.css file */
+
+/* Fix About Section and Our Story Section Spacing and Colors */
+
+/* Remove blue color and fix spacing between sections */
+.bg-white.h-5.w-full {
+    display: none !important; /* Remove the white/blue divider */
+}
+
+/* Fix About section bottom spacing */
+.relative.h-screen {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Add this at the end of your aboutus.css file */
+
+/* Fix Blue Gap Above Our Journey Section - Change to White */
+.bg-white.h-5.w-full {
+    background-color: #ffffff !important; /* Force white color */
+    display: block !important; /* Keep the space but make it white */
+}
+
+/* Ensure it stays white in both modes */
+body.dark-mode .bg-white.h-5.w-full,
+body.light-mode .bg-white.h-5.w-full {
+    background-color: #ffffff !important;
+}
+
+
+/* Add this at the end of your aboutus.css file */
+
+/* Remove Blue Color Above Our Journey in Dark Mode - Keep Only White */
+body.dark-mode .bg-white.h-5.w-full {
+    background-color: #ffffff !important; /* Force white color in dark mode */
+}
+
+body.dark-mode #story {
+    border-top: 5px solid #ffffff !important; /* White border instead of blue */
+}
+
+/* Remove any blue gradient bleeding */
+body.dark-mode .bg-gradient-to-br.from-gray-900.via-primary.to-dark {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&amp;h=1080&amp;fit=crop') !important;
+}
+
+
+
+
+
+
+/* Add this at the end of your aboutus.css file */
+
+/* Remove Blue Lines in White Space Between About and Our Story in Dark Mode */
+body.dark-mode .bg-white.h-5.w-full {
+    background: #ffffff !important; /* Pure white background */
+    background-image: none !important; /* Remove any background images */
+    background-attachment: none !important; /* Remove any gradients */
+}
+
+/* Remove blue lines/borders from the divider */
+body.dark-mode .bg-white.h-5.w-full::before,
+body.dark-mode .bg-white.h-5.w-full::after {
+    display: none !important; /* Remove pseudo elements that might show blue */
+}
+
+/* Ensure no blue bleeding from adjacent sections */
+body.dark-mode .relative.h-screen {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode #story {
+    border-top: none !important;
+    box-shadow: none !important;
+}
+
+/* Our Mission Section Mobile Fixes */
+@media (max-width: 768px) {
+  #story .grid.lg\:grid-cols-2 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  #story .bg-white.bg-opacity-10 {
+    padding: 1rem;
+  }
+  
+  #story .grid.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    text-align: center;
+  }
+  
+  #story .grid.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  #story .flex.flex-col.items-center span {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  #story .bg-white.bg-opacity-10 {
+    padding: 0.75rem;
+  }
+  
+  #story .grid.grid-cols-3 {
+    gap: 0.5rem;
+  }
+  
+  #story .grid.grid-cols-2 {
+    gap: 0.25rem;
+  }
+  
+  #story .w-14.h-14 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  #story .text-2xl {
+    font-size: 1.25rem;
+  }
+}
+
+
+/* Mobile Team Carousel Fix - Make cards scrollable */
+@media (max-width: 768px) {
+  /* Team carousel container */
+  #team .relative.overflow-hidden {
+    overflow: visible !important;
+  }
+  
+  /* Enable horizontal scrolling */
+  .team-carousel {
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    transform: none !important;
+    transition: none !important;
+    padding: 0 1rem !important;
+    gap: 1rem !important;
+  }
+  
+  /* Hide scrollbar */
+  .team-carousel::-webkit-scrollbar {
+    display: none !important;
+  }
+  
+  /* Team cards mobile sizing */
+  .team-card {
+    min-width: 280px !important;
+    max-width: 280px !important;
+    flex-shrink: 0 !important;
+    scroll-snap-align: center !important;
+    margin: 0 !important;
+  }
+  
+  /* Hide carousel buttons on mobile */
+  .carousel-btn {
+    display: none !important;
+  }
+  
+  /* Ensure cards are visible and scrollable */
+  .team-carousel .team-card {
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative !important;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .team-card {
+    min-width: 260px !important;
+    max-width: 260px !important;
+  }
+  
+  .team-carousel {
+    padding: 0 0.5rem !important;
+    gap: 0.75rem !important;
+  }
+}
+
+/* Force override any conflicting styles */
+@media (max-width: 768px) {
+  .team-carousel {
+    width: 100% !important;
+    position: relative !important;
+  }
+  
+  .team-carousel .flex-shrink-0 {
+    flex-shrink: 0 !important;
+  }
+}
+
+
+/* Fix Team Card Sizes - Make All Cards Same Size (LARGER) */
+@media (max-width: 768px) {
+  /* Force all team cards to same LARGER size */
+  .team-card {
+    min-width: 320px !important;
+    max-width: 320px !important;
+    width: 320px !important;
+    height: auto !important;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+    flex-basis: 320px !important;
+  }
+  
+  /* Ensure consistent card content sizing - LARGER */
+  .team-card .bg-white.bg-opacity-10 {
+    padding: 2rem 1.5rem !important;
+    height: auto !important;
+    min-height: 380px !important;
+    max-height: 380px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+  
+  /* Consistent image sizes - LARGER */
+  .team-card img {
+    width: 5rem !important;
+    height: 5rem !important;
+    object-fit: cover !important;
+  }
+  
+  /* Consistent text sizes - LARGER */
+  .team-card h3 {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.75rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* Consistent role badge sizes - LARGER */
+  .team-card .bg-blue-700 {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.875rem !important;
+    margin-bottom: 1.25rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
+  }
+  
+  /* Consistent description text - LARGER */
+  .team-card p {
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.25rem !important;
+    flex-grow: 1 !important;
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    
+    -webkit-box-orient: vertical !important;
+  }
+  
+  /* Consistent social icons - LARGER */
+  .team-card .w-10.h-10 {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+  
+  /* Consistent icon container - LARGER */
+  .team-card .absolute.-bottom-2.-right-2 {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  
+  /* Fix carousel container */
+  .team-carousel {
+    display: flex !important;
+    align-items: stretch !important;
+    gap: 1.25rem !important;
+  }
+}
+
+/* Medium mobile adjustments */
+@media (max-width: 480px) {
+  .team-card {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    width: 300px !important;
+    flex-basis: 300px !important;
+  }
+  
+  .team-card .bg-white.bg-opacity-10 {
+    padding: 1.75rem 1.25rem !important;
+    min-height: 360px !important;
+    max-height: 360px !important;
+  }
+  
+  .team-card img {
+    width: 4.5rem !important;
+    height: 4.5rem !important;
+  }
+  
+  .team-card h3 {
+    font-size: 1.125rem !important;
+  }
+  
+  .team-card .bg-blue-700 {
+    font-size: 0.8rem !important;
+    padding: 0.6rem 0.8rem !important;
+  }
+  
+  .team-card p {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Override any conflicting flex properties */
+@media (max-width: 768px) {
+  .team-card.flex-shrink-0 {
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+  }
+  
+  /* Ensure consistent spacing between cards */
+  .team-carousel {
+    padding: 0 1.25rem !important;
+  }
+  
+  .team-card:not(:last-child) {
+    margin-right: 0 !important;
+  }
+}
+
+
+/* Hide feature tags in Our Values section */
+.value-features {
+  display: none !important;
+}
+
+.feature-tag {
+  display: none !important;
+}
+
+/* Adjust value card content spacing after removing feature tags */
+.value-content {
+  padding: 30px 25px 25px !important;
+}
+
+.value-content p {
+  margin-bottom: 0 !important;
+}
+
+/* Mobile adjustments for values section */
+@media (max-width: 768px) {
+  .value-content {
+    padding: 25px 20px 20px !important;
+    margin-top: 100px !important;
+  }
+  
+  .value-content p {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .value-content {
+    padding: 20px 15px 15px !important;
+  }
+}
+
+/* Make Our Values headings clearer and more readable */
+.value-content h3 {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 800 !important;
+  font-size: 1.5rem !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Dark mode headings */
+body.dark-mode .value-content h3 {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Mobile headings */
+@media (max-width: 768px) {
+  .value-content h3 {
+    font-size: 1.25rem !important;
+    padding: 0.4rem 0.8rem !important;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .value-content h3 {
+    font-size: 1.1rem !important;
+    padding: 0.3rem 0.6rem !important;
+  }
+}

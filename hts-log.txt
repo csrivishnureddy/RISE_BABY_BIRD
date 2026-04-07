@@ -1,0 +1,20 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 07 Apr 2026 12:45:13 at https://risinternational.net/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://risinternational.net/ -O1 "C:\My_Web_Sites\RIS_International" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:46:57	Error: 	"Not Found" (404) at link https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.css (from https://risinternational.net/)
+12:50:06	Error: 	"Not Found" (404) at link https://risinternational.net/static/main/images/night.jpeg (from https://risinternational.net/)
+12:50:06	Error: 	"Not Found" (404) at link https://risinternational.net/privacy-policy (from https://risinternational.net/)
+12:50:06	Error: 	"Not Found" (404) at link https://risinternational.net/cookie-policy (from https://risinternational.net/)
+12:50:06	Error: 	"Unauthorized" (401) at link https://res.cloudinary.com/dzcnlnnt9/image/upload/v1751106020/career-header_Black_and_white_xynil1.jpg (from https://risinternational.net/)
+12:50:06	Error: 	"Unauthorized" (401) at link https://res.cloudinary.com/dzcnlnnt9/image/upload/v1750494947/Image_fx_54_mgytgv.png (from https://risinternational.net/static/main/css/index.css)
+12:50:06	Error: 	"Not Found" (404) at link https://risinternational.net/static/main/css/developer_carousel.css (from https://risinternational.net/aboutus/)
+12:50:09	Error: 	"Method Not Allowed" (405) at link https://risinternational.net/submit-job-application/ (from https://risinternational.net/careers/)
+12:50:09	Error: 	"Not Found" (404) at link https://risinternational.net/cdn-cgi/l/email-protection (from https://risinternational.net/contact/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 56 seconds : 155 links scanned, 145 files written (541138079 bytes overall) [538811154 bytes received at 1820307 bytes/sec], 3193364 bytes transferred using HTTP compression in 54 files, ratio 22%, 3.9 requests per connection
+(9 errors, 0 warnings, 0 messages)

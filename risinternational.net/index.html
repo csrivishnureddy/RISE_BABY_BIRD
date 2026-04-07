@@ -1,0 +1,4319 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from risinternational.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 07:15:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIS International Services</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="static/main/css/global.css">
+    
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/slideout%401.0.1/dist/slideout.min.css" />
+    <!-- AOS CSS -->
+    <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    
+     
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+    <link rel="stylesheet" href="static/main/css/index.css">
+
+    <style>
+        
+        /* Quote text font styling */
+#quote-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 400 !important; /* Regular weight */
+    font-style: normal !important; /* Remove italic */
+}
+
+/* Optional: Also update other quote section text elements */
+#quote-date {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: #fbbf24 !important; /* Golden yellow */
+}
+
+#current-time {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: #34d399 !important; /* Green */
+}
+
+#time-greeting {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background: linear-gradient(135deg, #3b82f6,rgb(176, 158, 224)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+/* Mobile responsive font adjustments */
+@media (max-width: 768px) {
+    #time-greeting {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+        color: transparent !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #quote-text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+    }
+}
+        /* Navigation Styles */
+        nav {
+            background: white !important;
+            color: black !important;
+        }
+        
+        nav a {
+            color: black !important;
+        }
+
+        body.dark-mode a {
+            color: unset;
+        }
+
+        /* Video Background Styles */
+        .video-bg {
+            position: fixed;
+            top: 0; 
+            left: 0; 
+            width: 100vw; 
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            transition: opacity 1s;
+        }
+        
+        .fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .fade-in {
+            opacity: 1;
+        }
+
+        /* Enhanced Mobile Responsiveness */
+        @media (max-width: 768px) {
+            /* Global Mobile Typography */
+            p {
+                font-size: 15px !important;
+                line-height: 1.6 !important;
+                margin-bottom: 1rem !important;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                line-height: 1.3 !important;
+                margin-bottom: 0.75rem !important;
+            }
+
+            /* Hero Section Mobile */
+            #meta-hero {
+                height: 100vh;
+                min-height: 600px;
+            }
+
+            #meta-hero h1 {
+                font-size: 2.5rem !important;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            #meta-hero p {
+                font-size: 1.1rem !important;
+                padding: 0 1rem;
+            }
+
+            #meta-play-pause {
+                right: 1rem !important;
+                bottom: 1rem !important;
+                padding: 0.75rem 1rem !important;
+            }
+
+            /* Mission & Vision Mobile */
+            #mission-block,
+            #vision-block {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                min-height: 400px;
+                margin-bottom: 2rem;
+            }
+
+            #mission-img,
+            #vision-img {
+                width: 100% !important;
+                left: 0 !important;
+                right: 0 !important;
+                height: 300px;
+                object-fit: cover;
+                transition: opacity 0.6s ease-in-out !important;
+            }
+        
+            #mission-text,
+            #vision-text {
+                width: 100% !important;
+                opacity: 1 !important;
+                position: relative !important;
+                background: rgba(255,255,255,0.95);
+                top: auto;
+                left: auto;
+                right: auto;
+                margin-top: 1rem;
+                padding: 1.5rem !important;
+                border-radius: 0.5rem;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                transition: all 0.6s ease-in-out !important;
+            }
+
+            #mission-text h2,
+            #vision-text h2 {
+                font-size: 1.75rem !important;
+                margin-bottom: 1rem;
+            }
+
+            /* Stats Cards Mobile */
+            .stat-card {
+                padding: 1rem !important;
+                text-align: center;
+                border-radius: 0.5rem;
+            }
+
+            /* Features Section Mobile */
+            .section-title {
+                font-size: 2rem !important;
+                line-height: 1.3;
+                margin-bottom: 1rem;
+            }
+
+            .section-description {
+                font-size: 1rem !important;
+                padding: 0 1rem;
+                line-height: 1.6;
+            }
+
+            /* Content Cards Mobile */
+            .content-card {
+                padding: 1.5rem !important;
+                margin-bottom: 2rem;
+            }
+
+            .card-title {
+                font-size: 1.5rem !important;
+                line-height: 1.3;
+            }
+
+            .card-text {
+                font-size: 0.95rem !important;
+                line-height: 1.6;
+            }
+
+            /* Feature Items Mobile */
+            .feature-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .feature-dot {
+                margin-bottom: 0.5rem;
+            }
+
+            /* Highlight Cards Mobile */
+            .highlight-card {
+                padding: 1.25rem !important;
+                margin-bottom: 1rem;
+            }
+
+            .highlight-title {
+                font-size: 1.1rem !important;
+            }
+
+            /* Image Wrappers Mobile */
+            .image-wrapper {
+                margin-bottom: 2rem;
+                height: 250px !important;
+            }
+
+            .main-image {
+                height: 100% !important;
+                object-fit: cover;
+            }
+
+            /* Mini Cards Mobile */
+            .mini-card {
+                padding: 1rem !important;
+                margin-bottom: 0.5rem;
+            }
+
+            .mini-card-text {
+                font-size: 0.9rem !important;
+            }
+
+            /* Services Section Mobile */
+            .service-card {
+                margin-bottom: 1.5rem;
+            }
+
+            .service-title {
+                font-size: 1.25rem !important;
+            }
+
+            .service-description {
+                font-size: 0.9rem !important;
+                line-height: 1.5;
+            }
+
+            /* Callback Form Mobile */
+            .callback-title {
+                font-size: 1.75rem !important;
+            }
+
+            .callback-subtitle {
+                font-size: 0.95rem !important;
+                padding: 0 0.5rem;
+            }
+
+            .callback-input,
+            .callback-textarea {
+                font-size: 1rem !important;
+                padding: 0.75rem !important;
+            }
+
+            /* Button Responsive */
+            .cta-btn,
+            .callback-submit-btn {
+                padding: 0.75rem 1.5rem !important;
+                font-size: 1rem !important;
+                width: 100% !important;
+                margin-bottom: 0.5rem !important;
+            }
+
+            .flex.flex-col.sm\\:flex-row {
+                flex-direction: column !important;
+            }
+        }
+
+        /* Tablet Responsiveness */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            #meta-hero h1 {
+                font-size: 3.5rem;
+            }
+
+            #meta-hero p {
+                font-size: 1.3rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+
+            .image-wrapper {
+                height: 300px;
+            }
+        }
+
+        /* Small Mobile Devices */
+        @media (max-width: 480px) {
+            #meta-hero h1 {
+                font-size: 2rem !important;
+            }
+
+            #meta-hero p {
+                font-size: 1rem !important;
+            }
+
+            .section-title {
+                font-size: 1.75rem !important;
+            }
+
+            .content-card {
+                padding: 1rem !important;
+            }
+
+            #mission-text,
+            #vision-text {
+                padding: 1rem !important;
+            }
+
+            .highlight-card {
+                padding: 1rem !important;
+            }
+        }
+
+        /* Landscape Mobile */
+        @media (max-width: 768px) and (orientation: landscape) {
+            #meta-hero {
+                height: 100vh;
+                min-height: 500px;
+            }
+
+            #meta-hero h1 {
+                font-size: 2.25rem !important;
+            }
+
+            #meta-hero p {
+                font-size: 1rem !important;
+            }
+        }
+
+        /* Container Responsive Padding */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .section-padding {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+        }
+
+        /* Grid Responsive Fixes */
+        @media (max-width: 768px) {
+            .grid {
+                gap: 1rem !important;
+            }
+
+            .lg\\:grid-cols-2 {
+                grid-template-columns: 1fr !important;
+            }
+
+            .lg\\:grid-cols-3 {
+                grid-template-columns: 1fr !important;
+            }
+
+            .md\\:grid-cols-2 {
+                grid-template-columns: 1fr !important;
+            }
+
+            .md\\:grid-cols-3 {
+                grid-template-columns: 1fr !important;
+            }
+
+            /* Service Cards Responsive */
+            .service-card,
+            .service-card-small,
+            .specialized-card {
+                width: 100% !important;
+                max-width: none !important;
+            }
+        }
+
+        /* Overflow fixes */
+        /*body, html {
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 100%;
+            overflow-x: hidden;
+        }*/
+
+        /* Image responsive fixes */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Video responsive fixes */
+        video {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+        }
+
+        /* Mobile overlay effects for mission/vision */
+        @media (max-width: 768px) {
+            #mission-text.mobile-overlay,
+            #vision-text.mobile-overlay {
+                position: absolute !important;
+                inset: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                text-align: center !important;
+                padding: 2rem !important;
+                background: rgba(0, 0, 0, 0.8) !important;
+                color: white !important;
+                z-index: 20 !important;
+                margin-top: 0 !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+            }
+
+            #mission-text.mobile-overlay h2,
+            #vision-text.mobile-overlay h2 {
+                color: white !important;
+            }
+
+            #mission-text.mobile-overlay p,
+            #vision-text.mobile-overlay p {
+                color: rgba(255, 255, 255, 0.9) !important;
+            }
+
+            #mission-text.mobile-overlay .stat-card,
+            #vision-text.mobile-overlay .stat-card {
+                background: rgba(255, 255, 255, 0.2) !important;
+                backdrop-filter: blur(10px) !important;
+                border: 1px solid rgba(255, 255, 255, 0.3) !important;
+                color: white !important;
+            }
+        }
+
+        /* Cookie Consent Banner Styles */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 1rem;
+    z-index: 9999;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    border-top: 2px solid #3b82f6;
+}
+
+.cookie-banner.show {
+    transform: translateY(0);
+}
+
+.cookie-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cookie-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #e5e7eb;
+}
+
+.cookie-text a {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+.cookie-text a:hover {
+    color: #93c5fd;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.cookie-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.875rem;
+}
+
+.cookie-btn-accept {
+    background: #3b82f6;
+    color: white;
+}
+
+.cookie-btn-accept:hover {
+    background: #2563eb;
+}
+
+.cookie-btn-decline {
+    background: transparent;
+    color: #9ca3af;
+    border: 1px solid #4b5563;
+}
+
+.cookie-btn-decline:hover {
+    background: #374151;
+    color: white;
+}
+
+.cookie-btn-settings {
+    background: transparent;
+    color: #60a5fa;
+    border: 1px solid #60a5fa;
+}
+
+.cookie-btn-settings:hover {
+    background: #60a5fa;
+    color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+    .cookie-banner {
+        padding: 1rem 0.75rem;
+    }
+    
+    .cookie-banner-content {
+        gap: 0.75rem;
+    }
+    
+    .cookie-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .cookie-btn {
+        width: 100%;
+        padding: 0.75rem;
+        text-align: center;
+    }
+    
+    .cookie-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* Cookie Settings Modal */
+.cookie-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.cookie-modal.show {
+    display: flex;
+}
+
+.cookie-modal-content {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.cookie-modal h3 {
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.cookie-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.cookie-toggle:last-child {
+    border-bottom: none;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background: #d1d5db;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.toggle-switch.active {
+    background: #3b82f6;
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.toggle-switch.active::after {
+    transform: translateX(26px);
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    justify-content: flex-end;
+}
+</style>
+
+</head>
+<body>
+  
+<nav class="w-full bg-[#1C1F22]/70 backdrop-blur-md text-white px-25 py-2 flex items-center justify-between shadow-md fixed top-0 left-0 z-50 border border-white/30">
+  <!-- Logo -->
+  <a href="index.html" class="flex justify-center items-center gap-2">
+    <img src="static/main/images/RISNEWLOGO.png" alt="Logo" id="logo" class="!h-20 !w-18 !max-w-none !max-h-none py-2">
+  </a>
+
+  <!-- Desktop Menu -->
+  <ul class="hidden md:flex gap-8 text-xs font-medium items-center">
+    <li><a href="index.html" class="hover:text-[#00AEEF] transition">Home</a></li>
+    <li><a href="aboutus/index.html" class="hover:text-[#00AEEF] transition">About us</a></li>
+    <li><a href="services/index.html" class="hover:text-[#00AEEF] transition">Services</a></li>
+    <li><a href="careers/index.html" class="hover:text-[#00AEEF] transition">Careers</a></li>
+    <li><a href="blog/index.html" class="hover:text-[#00AEEF] transition">Blog</a></li>
+    
+    
+  </ul>
+
+  <!-- Right controls (dark mode + hamburger) -->
+  <div class="flex items-center gap-2">
+    <!-- Dark mode toggle (FontAwesome) -->
+    
+    <!-- Hamburger (mobile only) -->
+    <button id="hamburger-icon" class="md:hidden p-2 rounded hover:bg-gray-700 transition" aria-label="Open menu">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Off-canvas Menu - UPDATED FOR BETTER TEXT VISIBILITY -->
+  <div id="offcanvas-menu" class="fixed top-0 right-0 h-full w-80 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 backdrop-blur-xl shadow-2xl z-50 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col rounded-l-2xl border-l-2 border-[#00AEEF]/30">
+    
+    <!-- Header Section -->
+    <div class="flex items-center justify-between px-6 py-4 border-b-2 border-[#00AEEF]/20 bg-gray-800/50">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-[#00AEEF] rounded-full flex items-center justify-center">
+          <i class="fas fa-bars text-white text-sm"></i>
+        </div>
+        <span class="font-bold text-xl text-white drop-shadow-lg">Menu</span>
+      </div>
+      <button id="close-menu" class="p-2 rounded-full hover:bg-red-500/20 transition-all duration-200 group" aria-label="Close menu">
+        <i class="fas fa-times text-xl text-white group-hover:text-red-400 transition-colors"></i>
+      </button>
+    </div>
+    
+    <!-- Navigation Links -->
+    <ul class="flex flex-col gap-2 p-6 font-medium flex-1">
+      <li>
+        <a href="index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-home text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="aboutus/index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-info-circle text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">About Us</span>
+        </a>
+      </li>
+      <li>
+        <a href="services/index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-cogs text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">Services</span>
+        </a>
+      </li>
+      <li>
+        <a href="careers/index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-briefcase text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">Careers</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="contact/index.html" class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-white hover:text-[#00AEEF] hover:bg-[#00AEEF]/10 transition-all duration-200">
+          <i class="fas fa-envelope text-[#00AEEF] group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold text-lg">Contact Us</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  
+    <!-- Hero Section -->
+    <section id="meta-hero" class="relative h-screen w-full overflow-hidden">
+        <!-- Background Videos -->
+        <video id="bg-video-0" 
+               class="meta-bg-video pointer-events-none absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" 
+               src="static/main/videos/WelcomeRISVideo.mp4" 
+               autoplay muted loop playsinline preload="auto">
+        </video>
+        
+        <video id="bg-video-1" 
+               class="meta-bg-video pointer-events-none absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" 
+               src="static/main/videos/Innovatewithus.mp4" 
+               autoplay muted loop playsinline preload="none">
+        </video>
+        
+        <video id="bg-video-2" 
+               class="meta-bg-video pointer-events-none absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" 
+               src="static/main/videos/TransformWithAI.mp4"  
+               autoplay muted loop playsinline preload="none">
+        </video>
+        
+        <video id="bg-video-3" 
+               class="meta-bg-video pointer-events-none absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" 
+               src="static/main/videos/JoinOurJourney.mp4"
+               autoplay muted loop playsinline preload="none">
+        </video>
+        
+        <!-- Overlay for readability -->
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+        <!-- Text overlays for each video -->
+        <div id="video-text-0" 
+             class="absolute z-20 inset-0 flex flex-col items-center justify-center text-center text-white transition-opacity duration-700 opacity-100 px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-gray-300">
+                Welcome to RIS International
+            </h1>
+            <p class="text-base sm:text-lg md:text-2xl mb-2 max-w-2xl mx-auto drop-shadow">
+                We move fast. We think big!
+            </p>
+        </div>
+        
+        <div id="video-text-1" 
+             class="absolute z-20 inset-0 flex flex-col items-center justify-center text-center text-white transition-opacity duration-700 opacity-0 px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-gray-300">
+                Innovate with Us
+                            </h1>
+            <p class="text-base sm:text-lg md:text-2xl mb-2 max-w-2xl mx-auto drop-shadow">
+                Building the future, together.
+            </p>
+        </div>
+        
+        <div id="video-text-2" 
+             class="absolute z-20 inset-0 flex flex-col items-center justify-center text-center text-white transition-opacity duration-700 opacity-0 px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-gray-300">
+                Transforming with AI
+            </h1>
+            <p class="text-base sm:text-lg md:text-2xl mb-2 max-w-2xl mx-auto drop-shadow">
+                Experience the future with artificial intelligence.
+            </p>
+        </div>
+        
+        <div id="video-text-3" 
+             class="absolute z-20 inset-0 flex flex-col items-center justify-center text-center text-white transition-opacity duration-700 opacity-0 px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-gray-300">
+                Join Our Journey
+            </h1>
+            <p class="text-base sm:text-lg md:text-2xl mb-2 max-w-2xl mx-auto drop-shadow">
+                Let's create something amazing.
+            </p>
+        </div>
+
+        <!-- Play/Pause button -->
+        <button id="meta-play-pause"
+                class="absolute right-4 sm:right-8 bottom-4 sm:bottom-8 z-30 bg-black/60 hover:bg-black/80 text-white rounded-full px-3 py-2 sm:px-4 sm:py-2 shadow-lg transition">
+            <span id="meta-play-icon">
+                <i class="fas fa-pause"></i>
+            </span>
+        </button>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section id="mission-vision" class="py-8 sm:py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-bold">
+                    Our Mission & <span class="text-highlight">Vision</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+<!-- Mission Block -->
+<div id="mission-block" class="relative md:h-[60vh] md:overflow-hidden mb-8 sm:mb-12 md:mb-16">
+    <video id="mission-img"
+           src="static/main/videos/our%20Mission.mp4"
+           class="w-full h-64 sm:h-80 md:absolute md:inset-0 md:w-full md:h-full object-cover transition-all duration-700 z-10"
+           autoplay 
+           muted 
+           loop 
+           playsinline
+           preload="metadata">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Video overlay to darken video when text appears -->
+    <div class="md:absolute md:inset-0 bg-black/20 transition-all duration-700 z-15" id="mission-overlay"></div>
+    
+    <div id="mission-text"
+         class="md:absolute md:right-0 md:top-0 md:h-full md:w-1/2 bg-white/95 backdrop-blur-sm flex flex-col justify-center px-4 sm:px-6 md:px-8 opacity-0 md:opacity-0 transition-all duration-700 z-30">
+        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-gray-900">
+            Our Mission
+        </h2>
+        <p class="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+            Being a professional web development, mobile application, and digital marketing company, our mission is to provide customer-centric, result-oriented, cost-competitive, innovative & functional IT Solutions to our valuable global clients.
+        </p>
+    </div>
+    
+    <!-- Simple Middle Play/Pause Button positioned on video area only -->
+    <button id="mission-video-control"
+            class="md:absolute md:top-1/2 md:left-1/4 transform md:-translate-x-1/2 md:-translate-y-1/2 z-25 text-white w-12 h-12 flex items-center justify-center transition-all duration-300 hover:scale-125 focus:outline-none border-none hidden md:block"
+            style="outline: none !important; border: none !important; box-shadow: none !important;">
+        <span id="mission-video-icon">
+            <i class="fas fa-pause text-2xl drop-shadow-lg"></i>
+        </span>
+    </button>
+    
+    <!-- Mobile play/pause button -->
+    <button id="mission-video-control-mobile"
+            class="absolute top-4 right-4 z-25 text-white w-10 h-10 flex items-center justify-center transition-all duration-300 hover:scale-125 focus:outline-none border-none md:hidden"
+            style="outline: none !important; border: none !important; box-shadow: none !important;">
+        <span id="mission-video-icon-mobile">
+            <i class="fas fa-pause text-lg drop-shadow-lg"></i>
+        </span>
+    </button>
+</div>
+
+<style>
+/* Mission video control buttons styling */
+#mission-video-control,
+#mission-video-control-mobile {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+#mission-video-control:focus,
+#mission-video-control:active,
+#mission-video-control:hover,
+#mission-video-control-mobile:focus,
+#mission-video-control-mobile:active,
+#mission-video-control-mobile:hover {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Ensure proper video display */
+#mission-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Enhanced mission text background */
+#mission-text {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Ensure proper z-index layering */
+#mission-block .z-10 { z-index: 10; }
+#mission-block .z-15 { z-index: 15; }
+#mission-block .z-25 { z-index: 25; }
+#mission-block .z-30 { z-index: 30; }
+</style>
+
+<script>
+// Mission Video Control Script
+document.addEventListener('DOMContentLoaded', function() {
+    const missionVideo = document.getElementById('mission-img');
+    const missionControlBtn = document.getElementById('mission-video-control');
+    const missionControlBtnMobile = document.getElementById('mission-video-control-mobile');
+    const missionIcon = document.getElementById('mission-video-icon');
+    const missionIconMobile = document.getElementById('mission-video-icon-mobile');
+    
+    function updateIcons(isPlaying) {
+        const iconClass = isPlaying ? 'fas fa-pause' : 'fas fa-play';
+        if (missionIcon) {
+            missionIcon.innerHTML = `<i class="${iconClass} text-2xl drop-shadow-lg"></i>`;
+        }
+        if (missionIconMobile) {
+            missionIconMobile.innerHTML = `<i class="${iconClass} text-lg drop-shadow-lg"></i>`;
+        }
+    }
+    
+    function toggleVideo() {
+        if (missionVideo) {
+            if (missionVideo.paused) {
+                missionVideo.play().catch(e => console.log('Video play failed:', e));
+            } else {
+                missionVideo.pause();
+            }
+        }
+    }
+    
+    if (missionVideo) {
+        let isPlaying = true;
+        
+        // Desktop button
+        if (missionControlBtn) {
+            missionControlBtn.addEventListener('click', toggleVideo);
+        }
+        
+        // Mobile button
+        if (missionControlBtnMobile) {
+            missionControlBtnMobile.addEventListener('click', toggleVideo);
+        }
+        
+        // Video event listeners
+        missionVideo.addEventListener('play', function() {
+            isPlaying = true;
+            updateIcons(true);
+        });
+        
+        missionVideo.addEventListener('pause', function() {
+            isPlaying = false;
+            updateIcons(false);
+        });
+        
+        missionVideo.addEventListener('ended', function() {
+            isPlaying = false;
+            updateIcons(false);
+        });
+    }
+});
+</script>
+
+
+
+        
+
+
+
+<!-- Vision Block -->
+<div id="vision-block" class="relative md:h-[60vh] md:overflow-hidden mb-8 sm:mb-12 md:mb-16">
+    <video id="vision-img"
+           src="static/main/videos/our_vision.mp4"
+           class="w-full h-64 sm:h-80 md:absolute md:inset-0 md:h-full object-cover transition-all duration-700 z-10"
+           style="width:100%; right:0; left:auto;"
+           autoplay 
+           muted 
+           loop 
+           playsinline
+           preload="metadata">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Video overlay to darken video when text appears -->
+    <div class="md:absolute md:inset-0 bg-black/20 transition-all duration-700 z-15" id="vision-overlay"></div>
+    
+    <div id="vision-text"
+         class="md:absolute md:left-0 md:top-0 md:h-full md:w-1/2 bg-white/95 backdrop-blur-sm flex flex-col justify-center px-4 sm:px-6 md:px-8 opacity-0 md:opacity-0 transition-all duration-700 z-30">
+        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-gray-900">
+            Our Vision
+        </h2>
+        <p class="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+            We strive for customer excellence and innovation, enabling our clients to become more agile and competitive through new technologies.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 gap-3 sm:gap-4 mt-3 md:mt-8">
+            <div class="stat-card bg-blue-gradient p-3 sm:p-4 rounded-lg text-white text-center">
+                <div class="text-lg sm:text-xl font-bold">52+</div>
+                <div class="stat-label text-xs sm:text-sm opacity-90">Happy Clients</div>
+            </div>
+            <div class="stat-card bg-purple-gradient p-3 sm:p-4 rounded-lg text-white text-center">
+                <div class="text-lg sm:text-xl font-bold">64+</div>
+                <div class="stat-label text-xs sm:text-sm opacity-90">Projects Delivered</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Simple Middle Play/Pause Button positioned on video area only -->
+    <button id="vision-video-control"
+            class="md:absolute md:top-1/2 md:right-1/4 transform md:translate-x-1/2 md:-translate-y-1/2 z-25 text-white w-12 h-12 flex items-center justify-center transition-all duration-300 hover:scale-125 focus:outline-none border-none hidden md:block"
+            style="outline: none !important; border: none !important; box-shadow: none !important;">
+        <span id="vision-video-icon">
+            <i class="fas fa-pause text-2xl drop-shadow-lg"></i>
+        </span>
+    </button>
+    
+    <!-- Mobile play/pause button -->
+    <button id="vision-video-control-mobile"
+            class="absolute top-4 right-4 z-25 text-white w-10 h-10 flex items-center justify-center transition-all duration-300 hover:scale-125 focus:outline-none border-none md:hidden"
+            style="outline: none !important; border: none !important; box-shadow: none !important;">
+        <span id="vision-video-icon-mobile">
+            <i class="fas fa-pause text-lg drop-shadow-lg"></i>
+        </span>
+    </button>
+</div>
+
+<style>
+/* Vision video control buttons styling */
+#vision-video-control,
+#vision-video-control-mobile {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+#vision-video-control:focus,
+#vision-video-control:active,
+#vision-video-control:hover,
+#vision-video-control-mobile:focus,
+#vision-video-control-mobile:active,
+#vision-video-control-mobile:hover {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Ensure proper video display */
+#vision-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Enhanced vision text background */
+#vision-text {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Ensure proper z-index layering */
+#vision-block .z-10 { z-index: 10; }
+#vision-block .z-15 { z-index: 15; }
+#vision-block .z-25 { z-index: 25; }
+#vision-block .z-30 { z-index: 30; }
+</style>
+
+<script>
+// Vision Video Control Script
+document.addEventListener('DOMContentLoaded', function() {
+    const visionVideo = document.getElementById('vision-img');
+    const visionControlBtn = document.getElementById('vision-video-control');
+    const visionControlBtnMobile = document.getElementById('vision-video-control-mobile');
+    const visionIcon = document.getElementById('vision-video-icon');
+    const visionIconMobile = document.getElementById('vision-video-icon-mobile');
+    
+    function updateVisionIcons(isPlaying) {
+        const iconClass = isPlaying ? 'fas fa-pause' : 'fas fa-play';
+        if (visionIcon) {
+            visionIcon.innerHTML = `<i class="${iconClass} text-2xl drop-shadow-lg"></i>`;
+        }
+        if (visionIconMobile) {
+            visionIconMobile.innerHTML = `<i class="${iconClass} text-lg drop-shadow-lg"></i>`;
+        }
+    }
+    
+    function toggleVisionVideo() {
+        if (visionVideo) {
+            if (visionVideo.paused) {
+                visionVideo.play().catch(e => console.log('Video play failed:', e));
+            } else {
+                visionVideo.pause();
+            }
+        }
+    }
+    
+    if (visionVideo) {
+        let isPlaying = true;
+        
+        // Desktop button
+        if (visionControlBtn) {
+            visionControlBtn.addEventListener('click', toggleVisionVideo);
+        }
+        
+        // Mobile button
+        if (visionControlBtnMobile) {
+            visionControlBtnMobile.addEventListener('click', toggleVisionVideo);
+        }
+        
+        // Video event listeners
+        visionVideo.addEventListener('play', function() {
+            isPlaying = true;
+            updateVisionIcons(true);
+        });
+        
+        visionVideo.addEventListener('pause', function() {
+            isPlaying = false;
+            updateVisionIcons(false);
+        });
+        
+        visionVideo.addEventListener('ended', function() {
+            isPlaying = false;
+            updateVisionIcons(false);
+        });
+    }
+});
+</script>
+
+            
+                
+
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Daily Quotes Section -->
+  <section id="daily-quotes" class="py-12 md:py-16 relative overflow-hidden min-h-[60vh] flex items-center">
+    <!-- Backgrounds -->
+    <div class="absolute inset-0 z-0">
+      <img id="morning-bg" src="static/main/images/morning.jpg"
+           class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0" />
+      <img id="afternoon-bg" src="static/main/images/afternoon.jpg"
+           class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0" />
+      <img id="evening-bg" src="static/main/images/evening.jpg"
+           class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0" />
+      <img id="night-bg" src="static/main/images/night.html"
+           class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0" />
+      <div id="time-overlay" class="absolute inset-0 bg-black/50 transition-opacity duration-1000"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 lg:px-8 relative z-10 w-full text-center">
+      <div class="mb-10">
+        <h2 id="section-title" class="text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
+          Daily <span id="time-greeting" class="text-indigo-300">Inspiration</span>
+        </h2>
+        <div id="title-underline" class="mx-auto mt-4 h-1 w-24 bg-indigo-400 rounded"></div>
+      </div>
+
+      <div class="mb-6">
+        <div id="quote-date" class="text-lg font-semibold text-indigo-100 drop-shadow"></div>
+        <div id="current-time" class="text-base font-medium mt-1 text-gray-300 drop-shadow"></div>
+      </div>
+
+      <blockquote id="quote-text"
+        class="text-2xl sm:text-3xl md:text-4xl font-bold italic leading-snug max-w-4xl mx-auto text-white drop-shadow-xl transition-opacity duration-500">
+        Loading inspiring quote...
+      </blockquote>
+
+      <div class="flex justify-center items-center mt-10">
+        <div id="decorative-line-left" class="h-px w-32 bg-indigo-500 opacity-60"></div>
+        <div id="decorative-dot" class="w-3 h-3 mx-4 rounded-full bg-pink-600 animate-pulse shadow-lg"></div>
+        <div id="decorative-line-right" class="h-px w-32 bg-indigo-500 opacity-60"></div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding py-8 sm:py-12 md:py-16 bg-features">
+        <div class="container mx-auto px-4 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-bold">
+                    Our Main <span class="text-highlight">Features</span>
+                </h2>
+                <div class="title-underline"></div>
+                <p class="section-description text-sm sm:text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    End-to-end software development, expert website development, innovative digital marketing, cost-effective outsourcing, scalable IT solutions, cutting-edge technologies, client-focused approach, and proven excellence since 2016.
+                </p>
+            </div>
+
+
+
+
+<div class="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
+    <!-- Content -->
+    <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <div class="content-card bg-white rounded-xl p-4 sm:p-6 md:p-8 shadow-lg">
+            <div class="card-header flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div class="icon-wrapper bg-indigo-gradient p-3 rounded-xl shadow-md flex-shrink-0">
+                    <i class="fas fa-target text-white text-lg sm:text-xl"></i>
+                </div>
+                <h3 class="card-title text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 text-center sm:text-left">
+                    Aim of Our Business
+                </h3>
+            </div>
+            
+            <p class="card-text mb-6 sm:mb-8 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+                Whether your company wants to produce digital thought leadership in your existing market, or expand to new audiences after a market shift, your website can help you win and maintain authority.
+            </p>
+
+            <div class="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                <div class="feature-item flex items-center gap-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-dot bg-indigo-500 w-3 h-3 rounded-full flex-shrink-0"></div>
+                    <p class="feature-text text-sm sm:text-base text-gray-700">
+                        Digital thought leadership in your existing market
+                    </p>
+                </div>
+                <div class="feature-item flex items-center gap-3" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-dot bg-blue-500 w-3 h-3 rounded-full flex-shrink-0"></div>
+                    <p class="feature-text text-sm sm:text-base text-gray-700">
+                        Expand to new audiences after market shifts
+                    </p>
+                </div>
+                <div class="feature-item flex items-center gap-3" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-dot bg-purple-500 w-3 h-3 rounded-full flex-shrink-0"></div>
+                    <p class="feature-text text-sm sm:text-base text-gray-700">
+                        Content marketing around topics in your market
+                    </p>
+                </div>
+            </div>
+
+            <div class="highlight-card bg-indigo-highlight bg-indigo-50 border border-indigo-200 rounded-xl p-4 sm:p-5 md:p-6" data-aos="fade-up" data-aos-delay="700">
+                <div class="highlight-header flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 mb-3">
+                    <div class="highlight-icon bg-indigo-500 p-2 rounded-lg flex-shrink-0">
+                        <i class="fas fa-crown text-white text-xs sm:text-sm"></i>
+                    </div>
+                    <h4 class="highlight-title text-base sm:text-lg md:text-xl font-semibold text-indigo-800 text-center sm:text-left">
+                        Authority Building
+                    </h4>
+                </div>
+                <p class="highlight-text text-sm sm:text-base text-indigo-700 text-center sm:text-left leading-relaxed">
+                    The key is owning content marketing around topics in your market, then pushing to relevant audiences.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+        <div class="image-wrapper relative w-full h-48 sm:h-64 md:h-72 lg:h-80 xl:h-96 overflow-hidden rounded-xl sm:rounded-2xl shadow-lg">
+            <div class="image-bg bg-indigo-gradient absolute inset-0 opacity-20"></div>
+            <video 
+                id="aim-video"
+                src="static/main/videos/Aim%20of%20our%20Business.mp4"
+                class="main-image w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                preload="metadata">
+                Your browser does not support the video tag.
+            </video>
+            <div class="image-overlay absolute inset-0 bg-gradient-to-t from-indigo-900/20 to-transparent"></div>
+            
+            <!-- Simple Middle Play/Pause Button (No Background, No Outline) -->
+            <button id="aim-video-control"
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-white w-12 h-12 flex items-center justify-center transition-all duration-300 hover:scale-125 focus:outline-none border-none"
+                    style="outline: none !important; border: none !important; box-shadow: none !important;">
+                <span id="aim-video-icon">
+                    <i class="fas fa-pause text-2xl drop-shadow-lg"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Remove all focus outlines and borders from video control button */
+#aim-video-control {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+#aim-video-control:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+#aim-video-control:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+#aim-video-control:hover {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+</style>
+
+<script>
+// Aim Video Control Script
+document.addEventListener('DOMContentLoaded', function() {
+    const aimVideo = document.getElementById('aim-video');
+    const aimControlBtn = document.getElementById('aim-video-control');
+    const aimIcon = document.getElementById('aim-video-icon');
+    
+    if (aimVideo && aimControlBtn && aimIcon) {
+        let isPlaying = true;
+        
+        aimControlBtn.addEventListener('click', function() {
+            if (isPlaying) {
+                aimVideo.pause();
+                aimIcon.innerHTML = '<i class="fas fa-play text-2xl drop-shadow-lg"></i>';
+                isPlaying = false;
+            } else {
+                aimVideo.play().catch(e => console.log('Video play failed:', e));
+                aimIcon.innerHTML = '<i class="fas fa-pause text-2xl drop-shadow-lg"></i>';
+                isPlaying = true;
+            }
+        });
+        
+        // Handle video ended event
+        aimVideo.addEventListener('ended', function() {
+            aimIcon.innerHTML = '<i class="fas fa-play text-2xl drop-shadow-lg"></i>';
+            isPlaying = false;
+        });
+        
+        // Handle video play event
+        aimVideo.addEventListener('play', function() {
+            aimIcon.innerHTML = '<i class="fas fa-pause text-2xl drop-shadow-lg"></i>';
+            isPlaying = true;
+        });
+        
+        // Handle video pause event
+        aimVideo.addEventListener('pause', function() {
+            aimIcon.innerHTML = '<i class="fas fa-play text-2xl drop-shadow-lg"></i>';
+            isPlaying = false;
+        });
+    }
+});
+</script>
+
+
+
+
+            
+
+
+
+
+<!-- Business Analytics Policy Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
+    <!-- Video -->
+    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="order-2 lg:order-1">
+        <div class="image-wrapper relative w-full h-48 sm:h-64 md:h-72 lg:h-80 xl:h-96 overflow-hidden rounded-xl sm:rounded-2xl shadow-lg">
+            <div class="image-bg bg-purple-gradient reverse absolute inset-0 opacity-20"></div>
+            <video 
+                id="analytics-video"
+                src="static/main/videos/Business%20Analytics%20Policy.mp4"
+                class="main-image w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                preload="metadata">
+                Your browser does not support the video tag.
+            </video>
+            <div class="image-overlay absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent"></div>
+            
+            <!-- Simple Middle Play/Pause Button -->
+            <button id="analytics-video-control"
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 bg-black/50 hover:bg-black/70 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110">
+                <span id="analytics-video-icon">
+                    <i class="fas fa-pause text-lg"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" class="order-1 lg:order-2">
+        <div class="content-card bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg border border-gray-100 dark:border-gray-700">
+            <div class="card-header flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div class="icon-wrapper bg-purple-gradient p-2 sm:p-3 rounded-lg sm:rounded-xl shadow-md flex-shrink-0">
+                    <i class="fas fa-chart-line text-white text-lg sm:text-xl"></i>
+                </div>
+                <h3 class="card-title text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 dark:text-white text-center sm:text-left">
+                    Business Analytics Policy
+                </h3>
+            </div>
+            
+            <p class="card-text mb-6 sm:mb-8 text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                Get ready to plunge into the data science revolution that is transforming the world. With new talent and new opportunities, data science is witnessing numerous applications.
+            </p>
+            
+            <div class="space-y-4 sm:space-y-6">
+                <div class="highlight-card bg-purple-highlight bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700 rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="highlight-header flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 mb-3">
+                        <div class="highlight-icon bg-purple-500 p-2 rounded-lg flex-shrink-0">
+                            <i class="fas fa-database text-white text-xs sm:text-sm"></i>
+                        </div>
+                        <h4 class="highlight-title text-base sm:text-lg md:text-xl font-semibold text-purple-800 dark:text-purple-200 text-center sm:text-left">
+                            Data Science Revolution
+                        </h4>
+                    </div>
+                    <p class="highlight-text text-sm sm:text-base text-purple-700 dark:text-purple-300 text-center sm:text-left leading-relaxed">
+                        Data scientists are actively sought after by nearly every sector – from banking to retail to health.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="mini-card bg-purple-gradient text-white p-4 sm:p-5 rounded-lg sm:rounded-xl text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <i class="fas fa-university text-xl sm:text-2xl mb-2 sm:mb-3"></i>
+                        <div class="mini-card-text text-sm sm:text-base font-medium">Banking</div>
+                    </div>
+                    <div class="mini-card bg-indigo-gradient text-white p-4 sm:p-5 rounded-lg sm:rounded-xl text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <i class="fas fa-shopping-cart text-xl sm:text-2xl mb-2 sm:mb-3"></i>
+                        <div class="mini-card-text text-sm sm:text-base font-medium">Retail</div>
+                    </div>
+                    <div class="mini-card bg-blue-gradient text-white p-4 sm:p-5 rounded-lg sm:rounded-xl text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                        <i class="fas fa-heartbeat text-xl sm:text-2xl mb-2 sm:mb-3"></i>
+                        <div class="mini-card-text text-sm sm:text-base font-medium">Healthcare</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Analytics Video Control Script
+document.addEventListener('DOMContentLoaded', function() {
+    const analyticsVideo = document.getElementById('analytics-video');
+    const analyticsControlBtn = document.getElementById('analytics-video-control');
+    const analyticsIcon = document.getElementById('analytics-video-icon');
+    
+    if (analyticsVideo && analyticsControlBtn && analyticsIcon) {
+        let isPlaying = true;
+        
+        analyticsControlBtn.addEventListener('click', function() {
+            if (isPlaying) {
+                analyticsVideo.pause();
+                analyticsIcon.innerHTML = '<i class="fas fa-play text-lg"></i>';
+                isPlaying = false;
+            } else {
+                analyticsVideo.play().catch(e => console.log('Video play failed:', e));
+                analyticsIcon.innerHTML = '<i class="fas fa-pause text-lg"></i>';
+                isPlaying = true;
+            }
+        });
+        
+        // Handle video ended event
+        analyticsVideo.addEventListener('ended', function() {
+            analyticsIcon.innerHTML = '<i class="fas fa-play text-lg"></i>';
+            isPlaying = false;
+        });
+        
+        // Handle video play event
+        analyticsVideo.addEventListener('play', function() {
+            analyticsIcon.innerHTML = '<i class="fas fa-pause text-lg"></i>';
+            isPlaying = true;
+        });
+        
+        // Handle video pause event
+        analyticsVideo.addEventListener('pause', function() {
+            analyticsIcon.innerHTML = '<i class="fas fa-play text-lg"></i>';
+            isPlaying = false;
+        });
+    }
+});
+</script>
+
+
+
+ 
+
+<!-- Enterprise Cookie Consent Banner -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div class="cookie-banner-content">
+        <svg class="cookie-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12C21,11.5 20.96,11 20.87,10.5C20.6,10.62 20.31,10.68 20,10.68C18.29,10.68 16.9,9.29 16.9,7.58C16.9,7.15 16.96,6.73 17.09,6.34C16.73,6.06 16.33,5.82 15.91,5.63C15.91,5.63 15.72,5.69 15.5,5.69C14.45,5.69 13.6,4.84 13.6,3.79C13.6,3.68 13.62,3.57 13.64,3.47C13.1,3.16 12.56,3 12,3M9.5,6A1.5,1.5 0 0,1 11,7.5A1.5,1.5 0 0,1 9.5,9A1.5,1.5 0 0,1 8,7.5A1.5,1.5 0 0,1 9.5,6M6.5,10A1.5,1.5 0 0,1 8,11.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 5,11.5A1.5,1.5 0 0,1 6.5,10M11.5,11A1.5,1.5 0 0,1 13,12.5A1.5,1.5 0 0,1 11.5,14A1.5,1.5 0 0,1 10,12.5A1.5,1.5 0 0,1 11.5,11M16.5,13A1.5,1.5 0 0,1 18,14.5A1.5,1.5 0 0,1 16.5,16A1.5,1.5 0 0,1 15,14.5A1.5,1.5 0 0,1 16.5,13M11,16A1.5,1.5 0 0,1 12.5,17.5A1.5,1.5 0 0,1 11,19A1.5,1.5 0 0,1 9.5,17.5A1.5,1.5 0 0,1 11,16Z" />
+        </svg>
+        
+        <div class="cookie-main-content">
+            <h2 id="cookie-title" class="cookie-title">We value your privacy</h2>
+            <div id="cookie-desc" class="cookie-text">
+                <p>We use cookies and similar technologies to provide the best experience on our website. Some cookies are necessary for the site to work, while others help us understand how you use our site and improve your experience. We also use cookies for advertising purposes. You can choose which cookies to allow.</p>
+            </div>
+            
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn-accept" onclick="acceptAllCookies()" aria-label="Accept all cookies">
+                    Accept All
+                </button>
+                <button class="cookie-btn cookie-btn-decline" onclick="declineAllCookies()" aria-label="Reject all non-essential cookies">
+                    Reject All
+                </button>
+                <button class="cookie-btn cookie-btn-settings" onclick="showCookieSettings()" aria-label="Customize cookie preferences">
+                    Manage Preferences
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enterprise Cookie Settings Modal -->
+<div id="cookieModal" class="cookie-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="cookie-modal-content">
+        <div class="cookie-modal-header">
+            <h3 id="modal-title">Privacy Preference Center</h3>
+            <p>When you visit our website, we store cookies on your browser to collect information. The information collected might relate to you, your preferences or your device, and is mostly used to make the site work as you expect it to and to provide a more personalized web experience.</p>
+        </div>
+        
+        <div class="cookie-modal-body">
+            <!-- Strictly Necessary Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Strictly Necessary Cookies
+                            <span class="status-badge status-always-on">Always Active</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services.
+                        </p>
+                        <div class="cookie-category-details">
+                            These cookies enable core functionality such as security, network management, and accessibility. Without these cookies, the website cannot function properly.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Authentication, security, load balancing, CSRF protection
+                        </div>
+                    </div>
+                    <div class="toggle-switch active disabled" aria-label="Strictly necessary cookies are always active">
+                        <span class="sr-only">Always Active</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Session ID:</strong> Maintains user session state</li>
+                        <li><strong>CSRF Token:</strong> Prevents cross-site request forgery</li>
+                        <li><strong>Load Balancer:</strong> Distributes traffic across servers</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Performance Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Performance Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular.
+                        </p>
+                        <div class="cookie-category-details">
+                            All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Google Analytics, Adobe Analytics, page load times, bounce rates
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="performanceToggle" onclick="toggleCookie('performance')" 
+                         role="switch" aria-checked="false" aria-labelledby="performance-label" tabindex="0">
+                        <span class="sr-only" id="performance-label">Enable performance cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Google Analytics:</strong> _ga, _gid, _gat (Analytics and reporting)</li>
+                        <li><strong>Adobe Analytics:</strong> s_cc, s_sq (User behavior analysis)</li>
+                        <li><strong>Hotjar:</strong> _hjid, _hjIncludedInSample (Heatmaps and recordings)</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Functional Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Functional Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages.
+                        </p>
+                        <div class="cookie-category-details">
+                            If you do not allow these cookies then some or all of these services may not function properly, such as live chat, social media features, or personalized content.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Live chat, social media widgets, video players, language preferences
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="functionalToggle" onclick="toggleCookie('functional')" 
+                         role="switch" aria-checked="false" aria-labelledby="functional-label" tabindex="0">
+                        <span class="sr-only" id="functional-label">Enable functional cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Intercom:</strong> intercom-* (Live chat support)</li>
+                        <li><strong>YouTube:</strong> YSC, VISITOR_INFO1_LIVE (Video functionality)</li>
+                        <li><strong>Vimeo:</strong> vuid (Video player preferences)</li>
+                        <li><strong>Social Media:</strong> Various cookies for social sharing</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Targeting Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Targeting Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+                        </p>
+                        <div class="cookie-category-details">
+                            They are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Google Ads, Facebook Pixel, LinkedIn Insight Tag, retargeting pixels
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="targetingToggle" onclick="toggleCookie('targeting')" 
+                         role="switch" aria-checked="false" aria-labelledby="targeting-label" tabindex="0">
+                        <span class="sr-only" id="targeting-label">Enable targeting cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Google Ads:</strong> _gcl_au, IDE, test_cookie (Advertising and conversion tracking)</li>
+                        <li><strong>Facebook:</strong> _fbp, fr (Social media advertising)</li>
+                        <li><strong>LinkedIn:</strong> li_sugr, UserMatchHistory (Professional network advertising)</li>
+                        <li><strong>Twitter:</strong> personalization_id (Social media advertising)</li>
+                        <li><strong>Microsoft:</strong> MUID, _uetsid (Search and display advertising)</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+        
+        <div class="cookie-modal-footer">
+            <div class="cookie-modal-footer-left">
+                <a href="privacy-policy.html" class="cookie-link" target="_blank">Privacy Policy</a>
+                <a href="cookie-policy.html" class="cookie-link" target="_blank">Cookie Policy</a>
+            </div>
+            <div class="cookie-modal-footer-right">
+                <button class="cookie-btn cookie-btn-decline" onclick="closeCookieSettings()">
+                    Cancel
+                </button>
+                <button class="cookie-btn cookie-btn-accept" onclick="saveCustomCookies()">
+                    Confirm My Choices
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Global Consumer Insights Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center px-4 sm:px-6 md:px-10 py-8 sm:py-12">
+                <!-- Content -->
+                <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="space-y-4 sm:space-y-6">
+                        <!-- Section Header -->
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+                            <div class="icon-wrapper bg-green-500 p-3 rounded-full flex-shrink-0">
+                                <i class="fas fa-globe-americas text-white text-lg sm:text-xl"></i>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-semibold text-center sm:text-left">
+                                Global Consumer Insights
+                            </h3>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed text-center sm:text-left">
+                            Customer experience (CX) exists in a feedback loop with employee experience (EX). An organisation trying to improve ROX without considering the employee experience is missing an integral part of the equation.
+                        </p>
+
+                        <!-- Highlights -->
+                        <div class="space-y-4 sm:space-y-6">
+                            <!-- CX Highlight -->
+                            <div class="p-4 sm:p-5 bg-green-100 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3 mb-2">
+                                    <div class="bg-green-500 p-2 rounded-full flex-shrink-0">
+                                        <i class="fas fa-users text-white text-sm"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-base sm:text-lg text-center sm:text-left">
+                                        Customer Experience (CX)
+                                    </h4>
+                                </div>
+                                <p class="text-sm sm:text-base text-gray-600 text-center sm:text-left">
+                                    Delivering exceptional customer experiences through data-driven insights and personalized interactions.
+                                </p>
+                            </div>
+
+                            <!-- EX Highlight -->
+                            <div class="p-4 sm:p-5 bg-teal-100 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-3 mb-2">
+                                    <div class="bg-teal-500 p-2 rounded-full flex-shrink-0">
+                                        <i class="fas fa-user-tie text-white text-sm"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-base sm:text-lg text-center sm:text-left">
+                                        Employee Experience (EX)
+                                    </h4>
+                                </div>
+                                <p class="text-sm sm:text-base text-gray-600 text-center sm:text-left">
+                                    Creating positive employee experiences that directly impact customer satisfaction and business ROI.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ROX Card -->
+                        <div class="p-4 sm:p-5 bg-blue-600 text-white rounded-lg shadow-md flex flex-col sm:flex-row justify-between items-center gap-3" data-aos="fade-up" data-aos-delay="600">
+                            <div class="text-center sm:text-left">
+                                <h4 class="font-bold text-base text-white sm:text-lg">ROX Improvement</h4>
+                                <p class="text-sm sm:text-base">Return on Experience through integrated CX & EX strategies</p>
+                            </div>
+                            <i class="fas fa-arrow-trend-up text-xl hidden md:block"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="relative w-full max-w-md mx-auto lg:mx-0">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-green-600 rounded-xl z-0"></div>
+                        <img src="static/main/images/Global%20Consumer%20Insights.avif"
+                             alt="Global consumer insights and customer experience" 
+                             class="relative rounded-xl w-full h-auto z-10 shadow-lg" />
+                        <div class="absolute inset-0 bg-black/10 rounded-xl z-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<style>
+/* Career Hero Section */
+.career-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../res.cloudinary.com/dzcnlnnt9/image/upload/v1751106020/career-header_Black_and_white_xynil1.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+
+.career-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.text-button {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+.text-button:hover {
+  color: #f3f4f6;
+  border-bottom-color: white;
+  outline: none !important;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 640px) {
+  .career-hero {
+    min-height: 80vh;
+    padding: 2rem 0;
+  }
+  
+  .career-hero::before {
+    background-position: center center;
+  }
+  
+  .career-hero-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .career-hero-text {
+    margin-left: 0 !important;
+    max-width: 100%;
+  }
+  
+  .career-hero h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .career-hero p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-button {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .career-hero-content {
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+  .career-hero-text {
+    margin-left: 0 !important;
+    max-width: 100%;
+  }
+  
+  .career-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .career-hero p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .career-hero-text {
+    margin-left: 2rem;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .career-hero {
+    min-height: 100vh;
+    padding: 1rem 0;
+  }
+  
+  .career-hero h1 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem;
+  }
+  
+  .career-hero p {
+    font-size: 0.875rem !important;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .career-hero {
+    min-height: 70vh;
+  }
+  
+  .career-hero h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .career-hero p {
+    font-size: 0.875rem !important;
+  }
+  
+  .text-button {
+    font-size: 0.875rem !important;
+    padding: 0.75rem 0;
+  }
+}
+</style>
+
+<!-- Career Hero Section -->
+<section class="career-hero relative bg-cover bg-center" style="background-image: url('static/main/images/oppurtunity.jpg');">  <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+  <div class="relative z-20 w-full flex flex-col md:flex-row items-center career-hero-content">
+    <!-- Left: Text -->
+    <div class="career-hero-text px-4 sm:px-6 md:ml-16 lg:ml-24 xl:ml-32 max-w-full sm:max-w-2xl text-left flex-1">
+      <h1 class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-gray-300">
+        JOIN US IN THE <br />
+        SEARCH FOR YOUR <br />
+        IDEAL JOB
+      </h1>
+      <p class="text-lg sm:text-xl md:text-2xl mb-8 text-gray-400">
+        We don't offer Jobs. We offer <span class="font-bold text-gray-300">Careers</span>.
+      </p>
+      <div class="mt-8">
+        <a href="careers/index.html" class="text-button text-xl">
+          Explore Opportunities
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Scripts -->
+    <script src="../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    
+    <script>
+        // Initialize AOS
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100,
+                disable: function() {
+                    var maxWidth = 768;
+                    return window.innerWidth < maxWidth;
+                }
+            });
+        }
+
+        // Callback form functionality
+        const form = document.getElementById("callbackForm");
+        const popup = document.getElementById("successPopup");
+
+        if (form && popup) {
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                
+                // Add loading state
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Submitting...';
+                submitBtn.disabled = true;
+                
+                // Simulate form submission delay
+                setTimeout(() => {
+                    if (form.checkValidity()) {
+                        form.reset();
+                        popup.classList.remove("hidden");
+                        
+                        // Reset button
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    }
+                }, 1000);
+            });
+        }
+
+        function closePopup() {
+            if (popup) {
+                popup.classList.add("hidden");
+            }
+        }
+
+        // Close popup when clicking outside
+        if (popup) {
+            popup.addEventListener('click', function(e) {
+                if (e.target === popup) {
+                    closePopup();
+                }
+            });
+        }
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && popup && !popup.classList.contains('hidden')) {
+                closePopup();
+            }
+        });
+
+        // GSAP Animation for feature section (if GSAP is loaded)
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof gsap !== 'undefined') {
+                const imageAnimate = document.getElementById("imageAnimate");
+                const textAnimate = document.getElementById("textAnimate");
+                
+                if (imageAnimate) {
+                    gsap.to(imageAnimate, { opacity: 1, duration: 1, x: 0, ease: "power3.out" });
+                }
+                if (textAnimate) {
+                    gsap.to(textAnimate, { opacity: 1, duration: 1, y: 0, delay: 0.5, ease: "power3.out" });
+                }
+            }
+        });
+    </script>
+
+    <!-- Video Hero Section Script -->
+    <script>
+        const videos = [
+            document.getElementById('bg-video-0'),
+            document.getElementById('bg-video-1'),
+            document.getElementById('bg-video-2'),
+            document.getElementById('bg-video-3')
+        ];
+        
+        const texts = [
+            document.getElementById('video-text-0'),
+            document.getElementById('video-text-1'),
+            document.getElementById('video-text-2'),
+            document.getElementById('video-text-3')
+        ];
+        
+        const playPauseBtn = document.getElementById('meta-play-pause');
+        const playIcon = document.getElementById('meta-play-icon');
+        const section = document.getElementById('meta-hero');
+        
+        let current = 0;
+        let playing = true;
+        let autoAdvanceTimer = null;
+        const AUTO_ADVANCE_INTERVAL = 3000; // 3 seconds for quick transitions
+        
+        function showVideo(idx) {
+            if (!videos[idx] || !texts[idx]) return;
+            
+            videos.forEach((v, i) => {
+                if (v) {
+                    v.classList.toggle('opacity-100', i === idx);
+                    v.classList.toggle('opacity-0', i !== idx);
+                    if (i === idx && playing) {
+                        v.play().catch(e => console.log('Video play failed:', e));
+                    } else {
+                        v.pause();
+                    }
+                }
+            });
+            
+            texts.forEach((t, i) => {
+                if (t) {
+                    t.classList.toggle('opacity-100', i === idx);
+                    t.classList.toggle('opacity-0', i !== idx);
+                }
+            });
+            
+            current = idx;
+            resetAutoAdvance();
+        }
+
+        function resetAutoAdvance() {
+            if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+            if (playing) {
+                autoAdvanceTimer = setTimeout(() => {
+                    let next = (current + 1) % videos.length;
+                    showVideo(next);
+                }, AUTO_ADVANCE_INTERVAL);
+            }
+        }
+        
+        // Play/Pause button functionality
+        if (playPauseBtn && playIcon) {
+            playPauseBtn.addEventListener('click', () => {
+                playing = !playing;
+                if (videos[current]) {
+                    videos[current][playing ? 'play' : 'pause']();
+                }
+                playIcon.innerHTML = playing ? '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
+                resetAutoAdvance();
+            });
+        }
+        
+        // Vertical scroll logic for video transitions
+        let isInSection = false;
+        
+        function onWheel(e) {
+            if (!isInSection) return;
+            e.preventDefault();
+            
+            if (e.deltaY > 0 && current < videos.length - 1) {
+                showVideo(current + 1);
+            } else if (e.deltaY < 0 && current > 0) {
+                showVideo(current - 1);
+            } else if (e.deltaY > 0 && current === videos.length - 1) {
+                // Allow scroll to next section after last video
+                window.removeEventListener('wheel', onWheel, { passive: false });
+                isInSection = false;
+                if (section) {
+                    window.scrollBy({ top: section.offsetHeight, behavior: 'smooth' });
+                }
+            }
+        }
+        
+        function checkSectionInView() {
+            if (!section) return;
+            
+            const rect = section.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            const sectionHeight = rect.height || section.offsetHeight;
+            
+            // Calculate how much of the section is visible
+            const visibleHeight = Math.min(windowHeight, rect.bottom) - Math.max(0, rect.top);
+            const visibleRatio = Math.max(0, Math.min(visibleHeight, sectionHeight)) / sectionHeight;
+
+            // Use 80% for desktop, 60% for mobile
+            const threshold = window.innerWidth < 768 ? 0.6 : 0.8;
+
+            if (visibleRatio >= threshold) {
+                if (!isInSection) {
+                    isInSection = true;
+                    window.addEventListener('wheel', onWheel, { passive: false });
+                }
+            } else {
+                if (isInSection) {
+                    isInSection = false;
+                    window.removeEventListener('wheel', onWheel, { passive: false });
+                }
+            }
+        }
+        
+        // Initialize video functionality
+        if (videos.length > 0 && videos[0]) {
+            showVideo(0);
+            window.addEventListener('scroll', checkSectionInView);
+            window.addEventListener('resize', checkSectionInView);
+            document.addEventListener('DOMContentLoaded', checkSectionInView);
+            
+            // Auto-advance when video ends (if not looping)
+            videos.forEach((v, idx) => {
+                if (v) {
+                    v.addEventListener('ended', () => {
+                        if (playing && current === idx && idx < videos.length - 1) {
+                            showVideo(idx + 1);
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+    
+    <!-- Mission &Vision Section Animation Script -->
+    <script>
+        // Enhanced mission and vision section effects for both desktop and mobile
+        function animateSection(blockId, imgId, textId) {
+            const block = document.getElementById(blockId);
+            const img = document.getElementById(imgId);
+            const text = document.getElementById(textId);
+            
+            if (!block || !img || !text) return;
+
+            function handleScroll() {
+                const rect = block.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                const isMobile = window.innerWidth < 768;
+
+                if (isMobile) {
+                    // Mobile effects: fade in/out
+                    const sectionCenter = rect.top + rect.height / 2;
+                    const viewportCenter = windowHeight / 2;
+                    const distanceFromCenter = Math.abs(sectionCenter - viewportCenter);
+                    const maxDistance = windowHeight / 2 + rect.height / 2;
+                    
+                    // Calculate opacity based on how close section is to viewport center
+                    const opacity = Math.max(0, 1 - (distanceFromCenter / maxDistance));
+                    
+                    if (rect.top < windowHeight && rect.bottom > 0) {
+                        // Section is in viewport
+                        if (rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3) {
+                            // Section is prominently in view - show text, fade image
+                            img.style.opacity = Math.max(0.3, 1 - opacity);
+                            text.style.opacity = opacity;
+                            text.style.transform = `translateY(${(1 - opacity) * 20}px)`;
+                        } else {
+                            // Section is entering/leaving - show image
+                            img.style.opacity = '1';
+                            text.style.opacity = '0';
+                            text.style.transform = 'translateY(20px)';
+                        }
+                    }
+                } else {
+                    // Desktop effects: width animations
+                    if (rect.top < windowHeight && rect.bottom > windowHeight * 0.5) {
+                        img.style.width = '100%';
+                        img.style.left = blockId === 'mission-block' ? '0' : 'auto';
+                        img.style.right = blockId === 'vision-block' ? '0' : 'auto';
+                        text.style.opacity = '0';
+                    }
+
+                    if (rect.top < windowHeight * 0.5 && rect.bottom > windowHeight * 0.3) {
+                        img.style.width = '50%';
+                        img.style.left = blockId === 'mission-block' ? '0' : 'auto';
+                        img.style.right = blockId === 'vision-block' ? '0' : 'auto';
+                        text.style.opacity = '1';
+                    }
+
+                    if (rect.bottom < windowHeight * 0.8) {
+                        img.style.width = '100%';
+                        img.style.left = blockId === 'mission-block' ? '0' : 'auto';
+                        img.style.right = blockId === 'vision-block' ? '0' : 'auto';
+                        text.style.opacity = '0';
+                    }
+                }
+            }
+
+            // Add scroll listener
+            window.addEventListener('scroll', handleScroll);
+            
+            // Initial call
+            handleScroll();
+            
+            // Re-run on resize to handle orientation changes
+            window.addEventListener('resize', () => {
+                setTimeout(handleScroll, 100);
+            });
+        }
+
+        // Enhanced vision section animation
+        function animateVisionSection() {
+            const block = document.getElementById('vision-block');
+            const img = document.getElementById('vision-img');
+            const text = document.getElementById('vision-text');
+            
+            if (!block || !img || !text) return;
+
+            const rect = block.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            const isMobile = window.innerWidth < 768;
+
+            if (isMobile) {
+                // Mobile effects: fade in/out (same as mission)
+                const sectionCenter = rect.top + rect.height / 2;
+                const viewportCenter = windowHeight / 2;
+                const distanceFromCenter = Math.abs(sectionCenter - viewportCenter);
+                const maxDistance = windowHeight / 2 + rect.height / 2;
+                
+                const opacity = Math.max(0, 1 - (distanceFromCenter / maxDistance));
+                
+                if (rect.top < windowHeight && rect.bottom > 0) {
+                    if (rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3) {
+                        img.style.opacity = Math.max(0.3, 1 - opacity);
+                        text.style.opacity = opacity;
+                        text.style.transform = `translateY(${(1 - opacity) * 20}px)`;
+                    } else {
+                        img.style.opacity = '1';
+                        text.style.opacity = '0';
+                        text.style.transform = 'translateY(20px)';
+                    }
+                }
+            } else {
+                // Desktop effects: width animations
+                if (rect.top < windowHeight && rect.top > windowHeight * 0.3) {
+                    img.style.width = '100%';
+                    img.style.right = '0';
+                    text.style.opacity = '0';
+                }
+                else if (rect.top <= windowHeight * 0.3 && rect.bottom > windowHeight * 0.3) {
+                    img.style.width = '50%';
+                    img.style.right = '0';
+                    text.style.opacity = '1';
+                }
+                else if (rect.bottom <= windowHeight * 0.7) {
+                    img.style.width = '100%';
+                    img.style.right = '0';
+                    text.style.opacity = '0';
+                }
+            }
+        }
+
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize mission section
+            animateSection('mission-block', 'mission-img', 'mission-text');
+            
+            // Initialize vision section
+            function enhancedVisionScroll() {
+                animateVisionSection();
+            }
+            
+            document.addEventListener('scroll', enhancedVisionScroll);
+            enhancedVisionScroll(); // Initial call
+            window.addEventListener('resize', enhancedVisionScroll);
+        });
+
+        // Performance optimization: throttle scroll events
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // Apply throttling to scroll-heavy functions
+        const throttledCheckSection = throttle(checkSectionInView, 16); // ~60fps
+        window.addEventListener('scroll', throttledCheckSection);
+
+        // Intersection Observer for better performance (modern browsers)
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                threshold: [0.1, 0.3, 0.5, 0.7, 0.9],
+                rootMargin: '0px'
+            };
+
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.target.id === 'meta-hero') {
+                        if (entry.intersectionRatio > 0.6) {
+                            if (!isInSection) {
+                                isInSection = true;
+                                window.addEventListener('wheel', onWheel, { passive: false });
+                            }
+                        } else {
+                            if (isInSection) {
+                                isInSection = false;
+                                window.removeEventListener('wheel', onWheel, { passive: false });
+                            }
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // Observe the hero section
+            const heroSection = document.getElementById('meta-hero');
+            if (heroSection) {
+                sectionObserver.observe(heroSection);
+            }
+        }
+        // Enterprise Cookie Consent Management System
+class CookieConsentManager {
+    constructor() {
+        this.CONSENT_KEY = 'retouch_cookie_consent_v2';
+        this.PREFERENCES_KEY = 'retouch_cookie_preferences_v2';
+        this.CONSENT_DATE_KEY = 'retouch_consent_date';
+        this.CONSENT_VERSION = '2.1';
+        this.CONSENT_EXPIRY_DAYS = 365;
+        
+        // Default preferences
+        this.defaultPreferences = {
+            essential: true,
+            performance: false,
+            functional: false,
+            targeting: false
+        };
+        
+        this.currentPreferences = { ...this.defaultPreferences };
+        this.consentGiven = false;
+        
+        // Initialize
+        this.init();
+    }
+    
+    init() {
+        this.checkExistingConsent();
+        this.setupEventListeners();
+        
+        // Show banner if no consent given
+        if (!this.consentGiven) {
+            this.showBanner();
+        } else {
+            this.loadServices();
+        }
+    }
+    
+    checkExistingConsent() {
+        try {
+            const consent = localStorage.getItem(this.CONSENT_KEY);
+            const preferences = localStorage.getItem(this.PREFERENCES_KEY);
+            const consentDate = localStorage.getItem(this.CONSENT_DATE_KEY);
+            
+            if (consent && preferences && consentDate) {
+                const consentData = JSON.parse(consent);
+                const consentDateTime = new Date(consentDate);
+                const now = new Date();
+                const daysDiff = (now - consentDateTime) / (1000 * 60 * 60 * 24);
+                
+                // Check if consent is still valid
+                if (daysDiff < this.CONSENT_EXPIRY_DAYS && consentData.version === this.CONSENT_VERSION) {
+                    this.consentGiven = true;
+                    this.currentPreferences = JSON.parse(preferences);
+                    this.loadServices();
+                    return;
+                }
+            }
+        } catch (error) {
+            console.warn('Error reading cookie consent:', error);
+        }
+        
+        // Clear invalid consent
+        this.clearConsent();
+    }
+    
+    showBanner() {
+        setTimeout(() => {
+            const banner = document.getElementById('cookieBanner');
+            if (banner) {
+                banner.classList.add('show');
+                banner.focus();
+            }
+        }, 1500);
+    }
+    
+    hideBanner() {
+        const banner = document.getElementById('cookieBanner');
+        if (banner) {
+            banner.classList.remove('show');
+        }
+    }
+    
+    acceptAllCookies() {
+        this.currentPreferences = {
+            essential: true,
+            performance: true,
+            functional: true,
+            targeting: true
+        };
+        
+        this.saveConsent();
+        this.hideBanner();
+        this.loadServices();
+        this.trackConsentEvent('accept_all');
+    }
+    
+    declineAllCookies() {
+        this.currentPreferences = { ...this.defaultPreferences };
+        this.saveConsent();
+        this.hideBanner();
+        this.loadServices();
+        this.trackConsentEvent('decline_all');
+    }
+    
+    showCookieSettings() {
+        const modal = document.getElementById('cookieModal');
+        if (modal) {
+            // Update toggles based on current preferences
+            this.updateModalToggles();
+            modal.classList.add('show');
+            
+            // Focus management
+            const firstFocusable = modal.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+            if (firstFocusable) {
+                firstFocusable.focus();
+            }
+        }
+    }
+    
+    closeCookieSettings() {
+        const modal = document.getElementById('cookieModal');
+        if (modal) {
+            modal.classList.remove('show');
+        }
+    }
+    
+    updateModalToggles() {
+        const toggles = {
+            performance: document.getElementById('performanceToggle'),
+            functional: document.getElementById('functionalToggle'),
+            targeting: document.getElementById('targetingToggle')
+        };
+        
+        Object.keys(toggles).forEach(key => {
+            const toggle = toggles[key];
+            if (toggle) {
+                toggle.classList.toggle('active', this.currentPreferences[key]);
+                toggle.setAttribute('aria-checked', this.currentPreferences[key]);
+            }
+        });
+    }
+    
+    toggleCookie(type) {
+        if (type === 'essential') return; // Cannot toggle essential cookies
+        
+        this.currentPreferences[type] = !this.currentPreferences[type];
+        
+        const toggle = document.getElementById(type + 'Toggle');
+        if (toggle) {
+            toggle.classList.toggle('active', this.currentPreferences[type]);
+            toggle.setAttribute('aria-checked', this.currentPreferences[type]);
+        }
+    }
+    
+    saveCustomCookies() {
+        this.saveConsent();
+                this.closeCookieSettings();
+        this.hideBanner();
+        this.loadServices();
+        this.trackConsentEvent('custom_preferences');
+    }
+    
+    saveConsent() {
+        try {
+            const consentData = {
+                version: this.CONSENT_VERSION,
+                timestamp: new Date().toISOString(),
+                preferences: this.currentPreferences
+            };
+            
+            localStorage.setItem(this.CONSENT_KEY, JSON.stringify(consentData));
+            localStorage.setItem(this.PREFERENCES_KEY, JSON.stringify(this.currentPreferences));
+            localStorage.setItem(this.CONSENT_DATE_KEY, new Date().toISOString());
+            
+            this.consentGiven = true;
+            
+            // Set consent cookie for server-side detection
+            this.setCookie('cookie_consent', 'granted', this.CONSENT_EXPIRY_DAYS);
+            this.setCookie('cookie_preferences', JSON.stringify(this.currentPreferences), this.CONSENT_EXPIRY_DAYS);
+            
+        } catch (error) {
+            console.error('Error saving cookie consent:', error);
+        }
+    }
+    
+    clearConsent() {
+        localStorage.removeItem(this.CONSENT_KEY);
+        localStorage.removeItem(this.PREFERENCES_KEY);
+        localStorage.removeItem(this.CONSENT_DATE_KEY);
+        this.deleteCookie('cookie_consent');
+        this.deleteCookie('cookie_preferences');
+        this.consentGiven = false;
+    }
+    
+    setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+        document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;SameSite=Lax;Secure`;
+    }
+    
+    deleteCookie(name) {
+        document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;`;
+    }
+    
+    loadServices() {
+        // Load services based on preferences
+        if (this.currentPreferences.performance) {
+            this.loadPerformanceServices();
+        }
+        
+        if (this.currentPreferences.functional) {
+            this.loadFunctionalServices();
+        }
+        
+        if (this.currentPreferences.targeting) {
+            this.loadTargetingServices();
+        }
+        
+        // Always load essential services
+        this.loadEssentialServices();
+    }
+    
+    loadEssentialServices() {
+        // Essential services are always loaded
+        console.log('Loading essential services...');
+        
+        // CSRF protection, session management, etc.
+        // These are typically handled server-side
+    }
+    
+    loadPerformanceServices() {
+        console.log('Loading performance analytics...');
+        
+        // Google Analytics 4
+        if (typeof gtag === 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            // Replace 'GA_MEASUREMENT_ID' with your actual GA4 measurement ID
+            const GA_ID = 'G-XXXXXXXXXX'; // Replace with your GA4 ID
+            gtag('config', GA_ID, {
+                anonymize_ip: true,
+                cookie_flags: 'SameSite=Lax;Secure'
+            });
+            
+            // Load GA script
+            const gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+            document.head.appendChild(gaScript);
+        }
+        
+        // Adobe Analytics (if used)
+        // this.loadAdobeAnalytics();
+        
+        // Hotjar (if used)
+        // this.loadHotjar();
+    }
+    
+    loadFunctionalServices() {
+        console.log('Loading functional services...');
+        
+        // Live chat (Intercom, Zendesk, etc.)
+        this.loadLiveChat();
+        
+        // Social media widgets
+        this.loadSocialWidgets();
+        
+        // Video players with enhanced features
+        this.loadVideoPlayers();
+    }
+    
+    loadTargetingServices() {
+        console.log('Loading targeting/advertising services...');
+        
+        // Google Ads
+        this.loadGoogleAds();
+        
+        // Facebook Pixel
+        this.loadFacebookPixel();
+        
+        // LinkedIn Insight Tag
+        this.loadLinkedInInsight();
+        
+        // Microsoft Advertising (Bing)
+        this.loadMicrosoftAds();
+    }
+    
+    loadLiveChat() {
+        // Example: Intercom
+        /*
+        window.intercomSettings = {
+            app_id: "your_app_id"
+        };
+        
+        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/your_app_id';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        */
+    }
+    
+    loadSocialWidgets() {
+        // Load social media widgets only when functional cookies are accepted
+        // This prevents automatic loading of social tracking
+    }
+    
+    loadVideoPlayers() {
+        // Enhanced video player functionality
+        // YouTube, Vimeo with tracking capabilities
+    }
+    
+    loadGoogleAds() {
+        // Google Ads conversion tracking
+        /*
+        gtag('config', 'AW-CONVERSION_ID');
+        */
+    }
+    
+    loadFacebookPixel() {
+        // Facebook Pixel
+        /*
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+        */
+    }
+    
+    loadLinkedInInsight() {
+        // LinkedIn Insight Tag
+        /*
+        _linkedin_partner_id = "YOUR_PARTNER_ID";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+        */
+    }
+    
+    loadMicrosoftAds() {
+        // Microsoft Advertising UET Tag
+        /*
+        (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"YOUR_TAG_ID"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+        */
+    }
+    
+    trackConsentEvent(action) {
+        // Track consent events for analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'cookie_consent', {
+                event_category: 'Privacy',
+                event_label: action,
+                value: 1
+            });
+        }
+        
+        // Custom analytics tracking
+        console.log(`Cookie consent event: ${action}`, this.currentPreferences);
+    }
+    
+    setupEventListeners() {
+        // Keyboard navigation for modal
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('cookieModal');
+            if (modal && modal.classList.contains('show')) {
+                if (e.key === 'Escape') {
+                    this.closeCookieSettings();
+                }
+                
+                // Tab trapping
+                if (e.key === 'Tab') {
+                    this.trapFocus(e, modal);
+                }
+            }
+        });
+        
+        // Click outside modal to close
+        document.getElementById('cookieModal')?.addEventListener('click', (e) => {
+            if (e.target.id === 'cookieModal') {
+                this.closeCookieSettings();
+            }
+        });
+        
+        // Toggle switches keyboard support
+        document.querySelectorAll('.toggle-switch').forEach(toggle => {
+            toggle.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggle.click();
+                }
+            });
+        });
+    }
+    
+    trapFocus(e, modal) {
+        const focusableElements = modal.querySelectorAll(
+            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        const firstFocusable = focusableElements[0];
+        const lastFocusable = focusableElements[focusableElements.length - 1];
+        
+        if (e.shiftKey) {
+            if (document.activeElement === firstFocusable) {
+                lastFocusable.focus();
+                e.preventDefault();
+            }
+        } else {
+            if (document.activeElement === lastFocusable) {
+                firstFocusable.focus();
+                e.preventDefault();
+            }
+        }
+    }
+    
+    // Public API methods
+    updatePreferences(newPreferences) {
+        this.currentPreferences = { ...this.currentPreferences, ...newPreferences };
+        this.saveConsent();
+        this.loadServices();
+    }
+    
+    getPreferences() {
+        return { ...this.currentPreferences };
+    }
+    
+    hasConsent(category = null) {
+        if (!this.consentGiven) return false;
+        if (!category) return true;
+        return this.currentPreferences[category] || false;
+    }
+    
+    withdrawConsent() {
+        this.clearConsent();
+        this.currentPreferences = { ...this.defaultPreferences };
+        window.location.reload(); // Reload to clear any loaded services
+    }
+    
+    showConsentBanner() {
+        this.showBanner();
+    }
+}
+
+// Initialize Cookie Consent Manager
+let cookieManager;
+
+// Global functions for backward compatibility and HTML onclick handlers
+function acceptAllCookies() {
+    cookieManager?.acceptAllCookies();
+}
+
+function declineAllCookies() {
+    cookieManager?.declineAllCookies();
+}
+
+function showCookieSettings() {
+    cookieManager?.showCookieSettings();
+}
+
+function closeCookieSettings() {
+    cookieManager?.closeCookieSettings();
+}
+
+function toggleCookie(type) {
+    cookieManager?.toggleCookie(type);
+}
+
+function saveCustomCookies() {
+    cookieManager?.saveCustomCookies();
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    cookieManager = new CookieConsentManager();
+    
+    // Expose to window for external access
+    window.CookieConsent = cookieManager;
+});
+
+// Handle page visibility changes
+document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+        // Page is hidden - pause any tracking
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_hidden');
+        }
+    } else {
+        // Page is visible - resume tracking
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_visible');
+        }
+    }
+});
+
+
+
+        // Handle mobile touch events for video navigation
+        let touchStartY = 0;
+        let touchEndY = 0;
+
+        if (section) {
+            section.addEventListener('touchstart', function(e) {
+                touchStartY = e.changedTouches[0].screenY;
+            }, { passive: true });
+
+            section.addEventListener('touchend', function(e) {
+                touchEndY = e.changedTouches[0].screenY;
+                handleSwipe();
+            }, { passive: true });
+        }
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartY - touchEndY;
+
+            if (Math.abs(diff) > swipeThreshold && isInSection) {
+                if (diff > 0 && current < videos.length - 1) {
+                    // Swipe up - next video
+                    showVideo(current + 1);
+                } else if (diff < 0 && current > 0) {
+                    // Swipe down - previous video
+                    showVideo(current - 1);
+                }
+            }
+        }
+
+        // Preload videos for better performance
+        function preloadVideos() {
+            videos.forEach((video, index) => {
+                if (video && index > 0) {
+                    video.preload = 'metadata';
+                    video.addEventListener('loadedmetadata', () => {
+                        console.log(`Video ${index} metadata loaded`);
+                    });
+                }
+            });
+        }
+
+        // Initialize preloading
+        document.addEventListener('DOMContentLoaded', preloadVideos);
+
+        // Handle visibility change to pause/resume videos
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                // Page is hidden, pause current video
+                if (videos[current]) {
+                    videos[current].pause();
+                }
+                if (autoAdvanceTimer) {
+                    clearTimeout(autoAdvanceTimer);
+                }
+            } else {
+                // Page is visible, resume if playing
+                if (playing && videos[current]) {
+                    videos[current].play().catch(e => console.log('Resume play failed:', e));
+                    resetAutoAdvance();
+                }
+            }
+        });
+
+        // Error handling for videos
+        videos.forEach((video, index) => {
+            if (video) {
+                video.addEventListener('error', function(e) {
+                    console.error(`Video ${index} error:`, e);
+                    // Skip to next video on error
+                    if (current === index && index < videos.length - 1) {
+                        showVideo(index + 1);
+                    }
+                });
+            }
+        });
+        // Enhanced Dynamic Daily Quotes System with Dark Mixed Color Text
+        class DynamicQuotesManager {
+  constructor() {
+    this.quotes = [
+      "The only way to do great work is to love what you do.",
+      "Innovation distinguishes between a leader and a follower.",
+      "The future belongs to those who believe in the beauty of their dreams.",
+      "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "Dream it. Wish it. Do it.",
+      "We don't just deliver software—we build partnerships that scale.",
+      "Loyal clients aren't earned through delivery, but through dedication.",
+      "Code connects systems. Trust connects people.",
+      "Push yourself, because no one else is going to do it for you.",
+      "Don't stop when you're tired. Stop when you're done.",
+      "Do something today that your future self will thank you for.",
+      "It's going to be hard, but hard does not mean impossible.",
+      "In every line of code, we write trust, not just logic.",
+      "Client success is our best feature.",
+      "Technology builds the product. Relationships build the company.",
+      "Strong client relationships aren't managed—they're nurtured.",
+      "Believe you can and you're halfway there.",
+    ];
+
+    this.backgrounds = {
+      morning: document.getElementById('morning-bg'),
+      afternoon: document.getElementById('afternoon-bg'),
+      evening: document.getElementById('evening-bg'),
+      night: document.getElementById('night-bg')
+    };
+
+    this.currentQuoteIndex = 0;
+    this.init();
+  }
+
+  init() {
+    this.updateDateTime();
+    this.displayQuote();
+    this.updateBackground();
+
+    setInterval(() => this.displayQuote(), 30000); // Changed from 60000 to 30000 (30 seconds)
+    setInterval(() => this.updateDateTime(), 1000); // every second
+    setInterval(() => this.updateBackground(), 60000); // every minute
+  }
+
+  getQuoteIndex() {
+    // Cycle through quotes every 30 seconds
+    this.currentQuoteIndex = (this.currentQuoteIndex + 1) % this.quotes.length;
+    return this.currentQuoteIndex;
+  }
+
+  displayQuote() {
+    const index = this.getQuoteIndex();
+    const quoteText = document.getElementById('quote-text');
+    if (quoteText) {
+      quoteText.style.opacity = '0.5';
+      setTimeout(() => {
+        quoteText.textContent = `"${this.quotes[index]}"`;
+        quoteText.style.opacity = '1';
+      }, 200);
+    }
+  }
+
+  updateDateTime() {
+    const now = new Date();
+    const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+
+    const dateElement = document.getElementById('quote-date');
+    const timeElement = document.getElementById('current-time');
+
+    if (dateElement) {
+      dateElement.textContent = now.toLocaleDateString('en-US', dateOptions);
+    }
+
+    if (timeElement) {
+      timeElement.textContent = now.toLocaleTimeString('en-US', timeOptions);
+    }
+  }
+
+  updateBackground() {
+    const hour = new Date().getHours();
+    let timePeriod = '';
+    let greeting = '';
+
+    if (hour >= 6 && hour < 12) {
+      timePeriod = 'morning';
+      greeting = 'Morning Inspiration';
+    } else if (hour >= 12 && hour < 18) {
+      timePeriod = 'afternoon';
+      greeting = 'Afternoon Motivation';
+    } else if (hour >= 18 && hour < 21) {
+      timePeriod = 'evening';
+      greeting = 'Evening Reflection';
+    } else {
+      timePeriod = 'night';
+      greeting = 'Night Thoughts';
+    }
+
+    // Set background image
+    Object.entries(this.backgrounds).forEach(([key, el]) => {
+      if (el) el.style.opacity = key === timePeriod ? '1' : '0';
+    });
+
+    // Update greeting
+    const greetingElement = document.getElementById('time-greeting');
+    if (greetingElement) greetingElement.textContent = greeting;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  window.dynamicQuotes = new DynamicQuotesManager();
+});
+
+    </script>
+
+  
+
+<!-- Meta-style Subscribe Bar -->
+<section class="bg-white-500 text-white px-4 sm:px-6 py-8 sm:py-10 border-b-2 border-white">
+  <div class="max-w-3xl mx-auto flex flex-col items-center text-center">
+    <h2 class="text-2xl font-bold text-black mb-2">Get the latest updates from RIS International Services</h2>
+    <p class="mb-4 text-base text-gray-800">
+      Subscribe with your email to receive news, events, and product updates from us.
+    </p>
+    <form id="subscribe-form" class="w-full flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <input
+        type="email"
+        id="footer-input"
+        placeholder="Email address"
+        required
+        class="px-4 py-2 !bg-black/60 text-black w-full sm:w-64 rounded-md"
+      />
+      <button
+        type="submit"
+        id="footer-button"
+        class="bg-blue-600 hover:bg-red-600 text-white px-6 py-2 rounded-full font-semibold transition"
+      >
+        Subscribe
+      </button>
+    </form>
+    <span id="subscribe-message" style="display:block;margin-top:0.5rem;font-size:14px;"></span>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="px-4 sm:px-6 pt-10 pb-6 text-sm" style="background-color: #f5f5f7;">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Top: Logo + Nav | Social -->
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start pb-6 gap-y-8 md:gap-y-0">
+
+      
+      <!-- Logo -->
+      <div class="flex justify-center md:justify-start items-end w-full h-8 md:h-12 md:w-auto">
+        
+
+
+
+<img src="static/main/images/RISNEWLOGO.png" alt="Logo" style="height:100%; width:auto;">
+      </div>
+   
+
+
+      <!-- Navigation Links -->
+      <div class="flex flex-wrap md:mt-5 justify-center md:justify-start w-full md:w-auto mt-6 md:mt-0 gap-x-8 gap-y-2 text-sm font-medium uppercase tracking-wide text-gray-600">
+        <a href="aboutus/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">About</a>
+        <a href="contact/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Contact</a>
+        <a href="careers/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Careers</a>
+        <a href="services/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Services</a>
+        
+      </div>
+      
+
+      <!-- Social Icons -->
+      <div class="w-full md:w-1/3 flex justify-center md:justify-end gap-4 text-lg mt-4 md:mt-4">
+        <a href="https://www.linkedin.com/company/retouch-it-services-private-limited/posts/?feedView=all" class="border border-gray-400 hover:border-black rounded-full w-10 h-10 flex items-center justify-center bg-transparent transition-colors">
+          <i class="fab fa-linkedin-in text-gray-600"></i>
+        </a>
+        <a href="https://www.facebook.com/share/1E1NiVWhDX/" class="border border-gray-400 hover:border-black rounded-full w-10 h-10 flex items-center justify-center bg-transparent transition-colors">
+          <i class="fab fa-facebook-f text-gray-600"></i>
+        </a>
+        <a href="https://x.com/retouchin_it" class="border border-gray-400 hover:border-black rounded-full w-10 h-10 flex items-center justify-center bg-transparent transition-colors">
+          <i class="fab fa-x-twitter text-gray-600"></i>
+        </a>
+        <a href="https://www.instagram.com/retouchitservices.in?igsh=a29wM3Q2MGN4dHh2" class="border border-gray-400 hover:border-black rounded-full w-10 h-10 flex items-center justify-center bg-transparent transition-colors">
+          <i class="fab fa-instagram text-gray-600"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 mb-4"></div>
+
+    <!-- Bottom Legal Links -->
+    <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-3 mt-6">
+      <div class="flex flex-wrap justify-center md:justify-start gap-4">
+        <a href="privacy-policy/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Privacy Statement</a>
+        <a href="terms-and-conditions/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Terms & Conditions</a>
+        <a href="#" onclick="showCookieSettings(); return false;" class="hover:underline text-gray-600 hover:text-black transition-colors cursor-pointer focus:outline-none">Cookie Settings</a>
+        <a href="accessibility-statement/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Accessibility Statement</a>
+        <a href="sitemap/index.html" class="hover:underline text-gray-600 hover:text-black transition-colors focus:outline-none">Sitemap</a>
+      </div>
+      <div class="w-full md:w-auto text-center md:text-right text-xs text-gray-600 mt-4 md:mt-0">
+        &copy; 2025 RIS International Services. All Rights Reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Subscribe JS -->
+<script>
+document.getElementById("subscribe-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const email = document.getElementById("footer-input").value;
+
+  fetch("subscribe/index.html", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "X-CSRFToken": getCookie("csrftoken")
+    },
+    body: new URLSearchParams({ email })
+  })
+  .then(response => response.json())
+  .then(data => {
+    const messageEl = document.getElementById("subscribe-message");
+    messageEl.textContent = data.message;
+    messageEl.style.color = data.status === "success" ? "green" : "red";
+  });
+
+  function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== "") {
+      const cookies = document.cookie.split(";");
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === name + "=") {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+});
+
+// Cookie Settings functionality
+function showCookieSettings() {
+  // Check if the cookie manager exists (from index.html)
+  if (typeof window.CookieConsent !== 'undefined') {
+    window.CookieConsent.showCookieSettings();
+  } else if (typeof cookieManager !== 'undefined') {
+    cookieManager.showCookieSettings();
+  } else {
+    // Fallback: show cookie banner if no consent given yet
+    const banner = document.getElementById('cookieBanner');
+    if (banner) {
+      banner.classList.add('show');
+    } else {
+      // If no cookie system is loaded, show a simple alert
+      alert('Cookie settings are not available on this page. Please visit the homepage to manage your cookie preferences.');
+    }
+  }
+}
+</script>
+  
+  <script src="static/main/js/global.js" defer></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- AOS JS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100
+    });
+  </script>
+
+  <!-- Slideout JS -->
+  <script src="../cdn.jsdelivr.net/npm/slideout%401.0.1/dist/slideout.min.js"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  
+  <!-- Add this just before the closing </body> tag in your base template -->
+<a href="contact/index.html" 
+   class="fixed z-50 bottom-6 right-6 md:bottom-8 md:right-8 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg flex items-center justify-center w-14 h-14 md:w-16 md:h-16 transition-all duration-300 group"
+   aria-label="Contact Us"
+   style="box-shadow: 0 4px 24px rgba(59,130,246,0.15);">
+    <svg class="w-7 h-7 md:w-8 md:h-8 transition-transform duration-200 group-hover:scale-110" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5V6.75A2.25 2.25 0 0018.75 4.5H5.25A2.25 2.25 0 003 6.75v10.5A2.25 2.25 0 005.25 19.5h13.5A2.25 2.25 0 0021 17.25V13.5m-9 0l3-3m0 0l-3-3m3 3H3"></path>
+    </svg>
+    <span class="sr-only">Contact Us</span>
+</a>
+  <!-- Enterprise Cookie Consent Banner -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div class="cookie-banner-content">
+        <svg class="cookie-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12C21,11.5 20.96,11 20.87,10.5C20.6,10.62 20.31,10.68 20,10.68C18.29,10.68 16.9,9.29 16.9,7.58C16.9,7.15 16.96,6.73 17.09,6.34C16.73,6.06 16.33,5.82 15.91,5.63C15.91,5.63 15.72,5.69 15.5,5.69C14.45,5.69 13.6,4.84 13.6,3.79C13.6,3.68 13.62,3.57 13.64,3.47C13.1,3.16 12.56,3 12,3M9.5,6A1.5,1.5 0 0,1 11,7.5A1.5,1.5 0 0,1 9.5,9A1.5,1.5 0 0,1 8,7.5A1.5,1.5 0 0,1 9.5,6M6.5,10A1.5,1.5 0 0,1 8,11.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 5,11.5A1.5,1.5 0 0,1 6.5,10M11.5,11A1.5,1.5 0 0,1 13,12.5A1.5,1.5 0 0,1 11.5,14A1.5,1.5 0 0,1 10,12.5A1.5,1.5 0 0,1 11.5,11M16.5,13A1.5,1.5 0 0,1 18,14.5A1.5,1.5 0 0,1 16.5,16A1.5,1.5 0 0,1 15,14.5A1.5,1.5 0 0,1 16.5,13M11,16A1.5,1.5 0 0,1 12.5,17.5A1.5,1.5 0 0,1 11,19A1.5,1.5 0 0,1 9.5,17.5A1.5,1.5 0 0,1 11,16Z" />
+        </svg>
+        
+        <div class="cookie-main-content">
+            <h2 id="cookie-title" class="cookie-title">We value your privacy</h2>
+            <div id="cookie-desc" class="cookie-text">
+                <p>We use cookies and similar technologies to provide the best experience on our website. Some cookies are necessary for the site to work, while others help us understand how you use our site and improve your experience. We also use cookies for advertising purposes. You can choose which cookies to allow.</p>
+            </div>
+            
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn-accept" id="acceptAllBtn" aria-label="Accept all cookies">
+                    Accept All
+                </button>
+                <button class="cookie-btn cookie-btn-decline" id="declineAllBtn" aria-label="Reject all non-essential cookies">
+                    Reject All
+                </button>
+                <button class="cookie-btn cookie-btn-settings" id="managePrefsBtn" aria-label="Customize cookie preferences">
+                    Manage Preferences
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enterprise Cookie Settings Modal -->
+<div id="cookieModal" class="cookie-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="cookie-modal-content">
+        <div class="cookie-modal-header">
+            <h3 id="modal-title">Privacy Preference Center</h3>
+            <p>When you visit our website, we store cookies on your browser to collect information. The information collected might relate to you, your preferences or your device, and is mostly used to make the site work as you expect it to and to provide a more personalized web experience.</p>
+        </div>
+        
+        <div class="cookie-modal-body">
+            <!-- Strictly Necessary Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Strictly Necessary Cookies
+                            <span class="status-badge status-always-on">Always Active</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services.
+                        </p>
+                        <div class="cookie-category-details">
+                            These cookies enable core functionality such as security, network management, and accessibility. Without these cookies, the website cannot function properly.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Authentication, security, load balancing, CSRF protection
+                        </div>
+                    </div>
+                    <div class="toggle-switch active disabled" aria-label="Strictly necessary cookies are always active">
+                        <span class="sr-only">Always Active</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Session ID:</strong> Maintains user session state</li>
+                        <li><strong>CSRF Token:</strong> Prevents cross-site request forgery</li>
+                        <li><strong>Load Balancer:</strong> Distributes traffic across servers</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Performance Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Performance Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular.
+                        </p>
+                        <div class="cookie-category-details">
+                            All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Google Analytics, Adobe Analytics, page load times, bounce rates
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="performanceToggle" data-type="performance" 
+                         role="switch" aria-checked="false" aria-labelledby="performance-label" tabindex="0">
+                        <span class="sr-only" id="performance-label">Enable performance cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Google Analytics:</strong> _ga, _gid, _gat (Analytics and reporting)</li>
+                        <li><strong>Adobe Analytics:</strong> s_cc, s_sq (User behavior analysis)</li>
+                        <li><strong>Hotjar:</strong> _hjid, _hjIncludedInSample (Heatmaps and recordings)</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Functional Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Functional Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages.
+                        </p>
+                        <div class="cookie-category-details">
+                            If you do not allow these cookies then some or all of these services may not function properly. This includes features like live chat, social media integration, and embedded videos.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Live chat, social media widgets, video players, language preferences
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="functionalToggle" data-type="functional" 
+                         role="switch" aria-checked="false" aria-labelledby="functional-label" tabindex="0">
+                        <span class="sr-only" id="functional-label">Enable functional cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>YouTube:</strong> YSC, VISITOR_INFO1_LIVE (Video functionality)</li>
+                        <li><strong>Vimeo:</strong> vuid (Video player preferences)</li>
+                        <li><strong>Intercom:</strong> intercom-* (Live chat support)</li>
+                        <li><strong>Zendesk:</strong> zendesk* (Customer support)</li>
+                        <li><strong>Social Media:</strong> Various cookies for social sharing</li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- Targeting Cookies -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div class="cookie-category-info">
+                        <h4 class="cookie-category-title">
+                            Targeting Cookies
+                            <span class="status-badge status-optional">Optional</span>
+                        </h4>
+                        <p class="cookie-category-desc">
+                            These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+                        </p>
+                        <div class="cookie-category-details">
+                            They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+                        </div>
+                        <div class="cookie-category-examples">
+                            <strong>Examples:</strong> Google Ads, Facebook Pixel, LinkedIn Insight, retargeting campaigns
+                        </div>
+                    </div>
+                    <div class="toggle-switch" id="targetingToggle" data-type="targeting" 
+                         role="switch" aria-checked="false" aria-labelledby="targeting-label" tabindex="0">
+                        <span class="sr-only" id="targeting-label">Enable targeting cookies</span>
+                    </div>
+                </div>
+                
+                <details class="vendor-info">
+                    <summary>View Cookies & Partners</summary>
+                    <ul class="vendor-list">
+                        <li><strong>Google Ads:</strong> _gcl_au, IDE, test_cookie (Advertising and conversion tracking)</li>
+                        <li><strong>Facebook:</strong> _fbp, fr (Social media advertising)</li>
+                        <li><strong>LinkedIn:</strong> li_sugr, UserMatchHistory (Professional network advertising)</li>
+                        <li><strong>Microsoft Advertising:</strong> MUID, _uetsid (Bing Ads tracking)</li>
+                        <li><strong>Twitter:</strong> personalization_id (Social media advertising)</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+        
+        <div class="cookie-modal-footer">
+            <div class="footer-links">
+                <a href="privacy-policy/index.html" class="footer-link" target="_blank">Privacy Policy</a>
+                <a href="cookie-policy/index.html" class="footer-link" target="_blank">Cookie Policy</a>
+            </div>
+            <div class="footer-buttons">
+                <button class="cookie-btn cookie-btn-secondary" id="cancelBtn">
+                    Cancel
+                </button>
+                <button class="cookie-btn cookie-btn-primary" id="savePrefsBtn">
+                    Save Preferences
+                </button>
+            </div>
+        </div>
+        
+        <button class="cookie-modal-close" id="closeModalBtn" aria-label="Close cookie preferences">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Success Popup -->
+<div id="successPopup" class="success-popup hidden">
+    <div class="success-popup-content">
+        <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L18,9.5L16.59,8.09L11,13.67L7.41,10.09L6,11.5L11,16.5Z" />
+            </svg>
+        </div>
+        <h3>Preferences Saved</h3>
+        <p>Your cookie preferences have been updated successfully.</p>
+        <button class="cookie-btn cookie-btn-primary" id="closeSuccessBtn">
+            OK
+        </button>
+    </div>
+</div>
+
+<style>
+/* Keep all your existing CSS styles here - they're fine */
+/* Enterprise Cookie Consent Styles */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    z-index: 10000;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.cookie-banner.show {
+    transform: translateY(0);
+}
+
+.cookie-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cookie-icon {
+    width: 32px;
+    height: 32px;
+    color: #1a73e8;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.cookie-main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.cookie-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #202124;
+    margin: 0 0 8px 0;
+}
+
+.cookie-text {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cookie-btn {
+    padding: 8px 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background: #fff;
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.cookie-btn:hover {
+    background: #f8f9fa;
+    border-color: #1a73e8;
+}
+
+.cookie-btn-accept {
+    background: #1a73e8;
+    color: #fff;
+    border-color: #1a73e8;
+}
+
+.cookie-btn-accept:hover {
+    background: #1557b0;
+    border-color: #1557b0;
+}
+
+.cookie-btn-decline {
+    background: #fff;
+    color: #5f6368;
+    border-color: #dadce0;
+}
+
+.cookie-btn-decline:hover {
+    background: #f8f9fa;
+    color: #202124;
+}
+
+/* Cookie Modal Styles */
+.cookie-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cookie-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cookie-modal-content {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.cookie-modal-header {
+    padding: 24px 24px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cookie-modal-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202124;
+    margin: 0 0 12px 0;
+}
+
+.cookie-modal-header p {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cookie-modal-body {
+    padding: 0;
+}
+
+.cookie-category {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 24px;
+}
+
+.cookie-category:last-child {
+    border-bottom: none;
+}
+
+.cookie-category-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cookie-category-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.cookie-category-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #202124;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-badge {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-always-on {
+    background: #e8f5e8;
+    color: #137333;
+}
+
+.status-optional {
+    background: #fef7e0;
+    color: #b06000;
+}
+
+.cookie-category-desc {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
+}
+
+.cookie-category-details {
+    color: #5f6368;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.cookie-category-examples {
+    color: #5f6368;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Toggle Switch Styles */
+.toggle-switch {
+    width: 44px;
+    height: 24px;
+    background: #dadce0;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.toggle-switch:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.toggle-switch.active {
+    background: #1a73e8;
+}
+
+.toggle-switch.active:before {
+    transform: translateX(20px);
+}
+
+.toggle-switch.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.toggle-switch:focus {
+    outline: 2px solid #1a73e8;
+    outline-offset: 2px;
+}
+
+/* Vendor Information */
+.vendor-info {
+    margin-top: 16px;
+}
+
+.vendor-info summary {
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.vendor-info summary:hover {
+    text-decoration: underline;
+}
+
+.vendor-list {
+    margin: 12px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vendor-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+.vendor-list li:last-child {
+    border-bottom: none;
+}
+
+/* Modal Footer */
+.cookie-modal-footer {
+    padding: 16px 24px 24px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.cookie-btn-primary {
+    background: #1a73e8;
+    color: #fff;
+    border-color: #1a73e8;
+}
+
+.cookie-btn-primary:hover {
+    background: #1557b0;
+    border-color: #1557b0;
+}
+
+.cookie-btn-secondary {
+    background: #fff;
+    color: #5f6368;
+    border-color: #dadce0;
+}
+
+.cookie-btn-secondary:hover {
+    background: #f8f9fa;
+    color: #202124;
+}
+
+/* Close Button */
+.cookie-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    color: #5f6368;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.cookie-modal-close:hover {
+    background: #f8f9fa;
+    color: #202124;
+}
+
+.cookie-modal-close svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Success Popup */
+.success-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.success-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.success-popup.hidden {
+    display: none;
+}
+
+.success-popup-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.success-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    color: #137333;
+}
+
+.success-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.success-popup-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #202124;
+    margin: 0 0 8px 0;
+}
+
+.success-popup-content p {
+    color: #5f6368;
+    font-size: 14px;
+    margin: 0 0 24px 0;
+}
+
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cookie-banner-content {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+    
+    .cookie-icon {
+        align-self: flex-start;
+    }
+    
+    .cookie-buttons {
+        flex-direction: column;
+    }
+    
+    .cookie-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cookie-modal {
+        padding: 10px;
+    }
+    
+    .cookie-modal-content {
+        max-height: 95vh;
+    }
+    
+    .cookie-modal-header {
+        padding: 20px 20px 16px;
+    }
+    
+    .cookie-category {
+        padding: 20px;
+    }
+    
+    .cookie-category-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .toggle-switch {
+        align-self: flex-start;
+    }
+    
+    .cookie-modal-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .footer-buttons {
+        width: 100%;
+    }
+    
+    .footer-buttons .cookie-btn {
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-banner-content {
+        padding: 12px;
+    }
+    
+    .cookie-title {
+        font-size: 16px;
+    }
+    
+    .cookie-text {
+        font-size: 13px;
+    }
+    
+    .cookie-modal-header {
+        padding: 16px;
+    }
+    
+    .cookie-category {
+        padding: 16px;
+    }
+    
+    .success-popup-content {
+        padding: 24px;
+    }
+}
+</style>
+
+<script>
+// Simple Cookie Consent System - Direct approach
+(function() {
+    'use strict';
+    
+    // Cookie preferences
+    let cookiePreferences = {
+        necessary: true,
+        performance: false,
+        functional: false,
+        targeting: false
+    };
+    
+    // Utility functions
+    function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+        const isSecure = window.location.protocol === 'index.html';
+        const secureFlag = isSecure ? ';Secure' : '';
+        document.cookie = ${name}=${value};expires=${expires.toUTCString()};path=/;SameSite=Lax${secureFlag};
+        console.log('Cookie set:', name, '=', value);
+    }
+    
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+    
+    function showBanner() {
+        const banner = document.getElementById('cookieBanner');
+        if (banner) {
+            banner.classList.add('show');
+            console.log('Banner shown');
+        }
+    }
+    
+    function hideBanner() {
+        const banner = document.getElementById('cookieBanner');
+        if (banner) {
+            banner.classList.remove('show');
+            console.log('Banner hidden');
+        }
+    }
+    
+    function showModal() {
+        const modal = document.getElementById('cookieModal');
+        if (modal) {
+            modal.classList.add('show');
+            updateToggleStates();
+        }
+    }
+    
+    function hideModal() {
+        const modal = document.getElementById('cookieModal');
+        if (modal) {
+            modal.classList.remove('show');
+        }
+    }
+    
+    function showSuccessPopup() {
+        const popup = document.getElementById('successPopup');
+        if (popup) {
+            popup.classList.remove('hidden');
+            popup.classList.add('show');
+            setTimeout(() => {
+                closeSuccessPopup();
+            }, 3000);
+        }
+    }
+    
+    function closeSuccessPopup() {
+        const popup = document.getElementById('successPopup');
+        if (popup) {
+            popup.classList.remove('show');
+            setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 300);
+        }
+    }
+    
+    function updateToggleStates() {
+        Object.keys(cookiePreferences).forEach(type => {
+            const toggle = document.getElementById(${type}Toggle);
+            if (toggle) {
+                toggle.classList.toggle('active', cookiePreferences[type]);
+                toggle.setAttribute('aria-checked', cookiePreferences[type]);
+            }
+        });
+    }
+    
+    function saveConsent() {
+        setCookie('cookie_consent', 'granted', 365);
+        setCookie('cookie_preferences', JSON.stringify(cookiePreferences), 365);
+        hideBanner();
+        console.log('Consent saved with preferences:', cookiePreferences);
+    }
+    
+    function acceptAllCookies() {
+        console.log('Accept All clicked');
+        cookiePreferences = {
+            necessary: true,
+            performance: true,
+            functional: true,
+            targeting: true
+        };
+        saveConsent();
+    }
+    
+    function declineAllCookies() {
+        console.log('Decline All clicked');
+        cookiePreferences = {
+            necessary: true,
+            performance: false,
+            functional: false,
+            targeting: false
+        };
+        saveConsent();
+    }
+    
+    function toggleCookie(type) {
+        if (type !== 'necessary') {
+            cookiePreferences[type] = !cookiePreferences[type];
+            updateToggleStates();
+            console.log('Toggled', type, 'to', cookiePreferences[type]);
+        }
+    }
+    
+    function saveCustomCookies() {
+        console.log('Save Custom clicked');
+        saveConsent();
+        hideModal();
+        showSuccessPopup();
+    }
+    
+    function init() {
+        console.log('Initializing cookie consent...');
+        
+        // Check existing consent
+        const consent = getCookie('cookie_consent');
+        const preferences = getCookie('cookie_preferences');
+        
+        console.log('Existing consent:', consent);
+        console.log('Existing preferences:', preferences);
+        
+        if (consent === 'granted' && preferences) {
+            try {
+                cookiePreferences = JSON.parse(preferences);
+                console.log('Consent already given, not showing banner');
+                return; // Don't show banner
+            } catch (e) {
+                console.error('Error parsing preferences:', e);
+            }
+        }
+        
+        // Show banner if no valid consent
+        console.log('No valid consent found, showing banner');
+        showBanner();
+    }
+    
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+    
+    // Set up event listeners when DOM is ready
+    function setupEventListeners() {
+        console.log('Setting up event listeners...');
+        
+        // Banner buttons
+        const acceptBtn = document.getElementById('acceptAllBtn');
+        const declineBtn = document.getElementById('declineAllBtn');
+        const manageBtn = document.getElementById('managePrefsBtn');
+        
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', acceptAllCookies);
+            console.log('Accept button listener added');
+        }
+        
+        if (declineBtn) {
+            declineBtn.addEventListener('click', declineAllCookies);
+            console.log('Decline button listener added');
+        }
+        
+        if (manageBtn) {
+            manageBtn.addEventListener('click', showModal);
+            console.log('Manage button listener added');
+        }
+        
+        // Modal buttons
+        const saveBtn = document.getElementById('savePrefsBtn');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const closeBtn = document.getElementById('closeModalBtn');
+        const successBtn = document.getElementById('closeSuccessBtn');
+        
+        if (saveBtn) {
+            saveBtn.addEventListener('click', saveCustomCookies);
+        }
+        
+        if (cancelBtn) {
+            cancelBtn.addEventListener('click', hideModal);
+        }
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', hideModal);
+        }
+        
+        if (successBtn) {
+            successBtn.addEventListener('click', closeSuccessPopup);
+        }
+        
+        // Toggle switches
+        const toggles = document.querySelectorAll('.toggle-switch[data-type]');
+        toggles.forEach(toggle => {
+            const type = toggle.getAttribute('data-type');
+            if (type && type !== 'necessary') {
+                toggle.addEventListener('click', () => toggleCookie(type));
+                
+                // Keyboard support
+                toggle.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleCookie(type);
+                    }
+                });
+            }
+        });
+        
+        // Close modal on outside click
+        const modal = document.getElementById('cookieModal');
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    hideModal();
+                }
+            });
+        }
+        
+        // ESC key support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('cookieModal');
+                const popup = document.getElementById('successPopup');
+                
+                if (modal && modal.classList.contains('show')) {
+                    hideModal();
+                } else if (popup && popup.classList.contains('show')) {
+                    closeSuccessPopup();
+                }
+            }
+        });
+        
+        console.log('Event listeners setup complete');
+    }
+    
+    // Setup event listeners when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupEventListeners);
+    } else {
+        setupEventListeners();
+    }
+    
+    // Make functions globally available for debugging
+    window.cookieConsent = {
+        acceptAll: acceptAllCookies,
+        declineAll: declineAllCookies,
+        showSettings: showModal,
+        getPreferences: () => cookiePreferences,
+        getCookie: getCookie,
+        setCookie: setCookie
+    };
+    
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"d3f109a7c0e447f5a90144592920e153","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from risinternational.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 07:16:57 GMT -->
+</html>
