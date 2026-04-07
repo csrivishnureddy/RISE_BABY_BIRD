@@ -1,8 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-risinternational.net	TRUE	/	FALSE	1999999999	csrftoken	pDPvHRCQN2Xw5dsCcibRAMuiBYOnCsPe
-risinternational.net	TRUE	/	FALSE	1999999999	SameSite	Lax
-pexels.com	TRUE	/	FALSE	1999999999	__cf_bm	FsQCni9I5B7.K37iMW8bA9dE.Nm5GAfdXT1WnBPHDOE-1775546392.131703-1.0.1.1-HAhoLpFIctQ1NdV_fY856Dh4yKcxDlFbPEp.elG8mR7DgS7.R_r_rNvx3dOX41mZW6cXQvBCuSLcYJ5JzqpYGMqQcR.77TqMZL.K.0km9gFRmFoqcFg0TTZ2kRq6qLaF
-images.pexels.com	TRUE	/	FALSE	1999999999	_cfuvid	yXOj2MohCuPll.6X9sHOY.Br82EN1UqhhPYYQDj33DE-1775546392.131703-1.0.1.1-EtVNwp4gTSvsqG5WmkoAnjbDhx8UGgz44ieLg5taSv8
-pexels.com	TRUE	/	FALSE	1999999999	SameSite	None
-
